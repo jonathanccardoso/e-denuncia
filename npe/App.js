@@ -6,6 +6,15 @@
  * @flow
  */
 
+import React from 'react';
+//import Routes from './routes';
+import Routes from './src';
+
+const App = () => <Routes />;
+
+export default App;
+
+/*
 import React, {Fragment} from 'react';
 import {
   SafeAreaView,
@@ -112,3 +121,4 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+*/
