@@ -6,10 +6,10 @@ Aplicação corporativa para gestão e monitoramento de denúncias desenvolvido 
 
 Tecnologias usadas Spring Boot, React Native
 
-- [Api](#)
-- [Web](#)
+- [Api](https://github.com/jonathanccardoso/e-denuncia/tree/master/app)
+- [Web](https://github.com/jonathanccardoso/e-denuncia/tree/master/web)
 - [Mobile](https://github.com/jonathanccardoso/e-denuncia/tree/master/npe)
-	- [Preview](https://snack.expo.io/@jonathan-moura/iae-react?session_id=snack-session-aebgrBdgY)
+	- [Preview](https://snack.expo.io/@jonathan-moura/iae-react?session_id=snack-session-yIauKRVvZ)
 
 ```javascript
 $ react-native start
@@ -17,8 +17,7 @@ $ react-native start
 
 ## Documentos
 
-- link-xd
-- script-banco
+- [Protótipo de alta fidelidade](https://xd.adobe.com/view/acdacde9-64ed-4cf8-7ebf-5a561cca9aaf-daeb/)
 
 ## Como contribuir?
 
@@ -33,11 +32,11 @@ $ react-native start
 
 ## Team Null Pointer Exception
 
-**Breno Alves** <https://github.com/breno-alves>
-**Carlos Silva** <https://github.com/lowliet64>
-**Simei Thander** <https://github.com/simeithander>
-**Henrique Albuquerque** <https://github.com/rickyalbuq>
-**Jonathan Cardoso** <https://github.com/jonathanccardoso>
+- **Breno Alves** <https://github.com/breno-alves>
+- **Carlos Silva** <https://github.com/lowliet64>
+- **Simei Thander** <https://github.com/simeithander>
+- **Henrique Albuquerque** <https://github.com/rickyalbuq>
+- **Jonathan Cardoso** <https://github.com/jonathanccardoso>
 
 ## Licença
 
