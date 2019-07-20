@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image, ScrollView } from 'react-native';
+import { Text, View, StyleSheet, Image, ScrollView, TouchableOpacity } from 'react-native';
 import Constants from 'expo-constants';
 
 import { Card } from 'react-native-paper';
@@ -17,90 +17,90 @@ export default class App extends React.Component {
           </Text>
           <TouchableOpacity style={styles.containerLinks}
             onPress={ () => {
-              this.props.navigation.navigate("TipoCrimes");
+              this.props.navigation.navigate("Endereco");
             }}
           >
             <Image style={styles.img} source={require('../assets/icon_virtuais.png')} />
             <Text style={styles.links}>
-                <Text style={styles.tituloLink}>Crimes Virtuais{"\n"}</Text>
-                Crimes cometidos por computador ou através da internet
+                <Text style={styles.tituloLink}>Extorsão xx{"\n"}</Text>
+                Chantagens ou ameaças com a intenção de receber dinheiro das vitimas
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.containerLinks}
             onPress={ () => {
-              this.props.navigation.navigate("TipoCrimes");
+              this.props.navigation.navigate("Endereco");
             }}
           >
-            <Image style={styles.img} source={require('../assets/icon_ambiental.png')} />
+            <Image style={styles.img} source={require('../assets/icon_virtuais.png')} />
             <Text style={styles.links}>
-                <Text style={styles.tituloLink}>Crimes Ambientais{"\n"}</Text>
-                Crimes cometidos contra o meio ambiente, animais ou poluição urbana
+                <Text style={styles.tituloLink}>Estelionato{"\n"}</Text>
+                Passar-se por outra pessoa para obter vantagens ou roubar informações
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.containerLinks}
             onPress={ () => {
-              this.props.navigation.navigate("TipoCrimes");
+              this.props.navigation.navigate("Endereco");
             }}
           >
-            <Image style={styles.img} source={require('../assets/icon_patrimonial.png')} />
+            <Image style={styles.img} source={require('../assets/icon_virtuais.png')} />
             <Text style={styles.links}>
-                <Text style={styles.tituloLink}>Crimes Patrimoniais{"\n"}</Text>
-                Crimes cometidos contra propriedades públicas ou privadas
+                <Text style={styles.tituloLink}>Fotos íntimas{"\n"}</Text>
+                Compartilhar ou manter, de maniera não consensual, fotos íntimas de outras pessoas
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.containerLinks}
             onPress={ () => {
-              this.props.navigation.navigate("TipoCrimes");
+              this.props.navigation.navigate("Endereco");
             }}
           >
-            <Image style={styles.img} source={require('../assets/icon_corrupcao.png')} />
+            <Image style={styles.img} source={require('../assets/icon_virtuais.png')} />
             <Text style={styles.links}>
-                <Text style={styles.tituloLink}>Crimes Corrupção{"\n"}</Text>
-                Denúncias de corrupção, desvio de verbas ou outros
+                <Text style={styles.tituloLink}>Pedofilia{"\n"}</Text>
+                Ver, manter ou compartilhar conteúdo com pornografia infantil
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.containerLinks}
             onPress={ () => {
-              this.props.navigation.navigate("TipoCrimes");
+              this.props.navigation.navigate("Endereco");
             }}
           >
-            <Image style={styles.img} source={require('../assets/icon_violentos.png')} />
+            <Image style={styles.img} source={require('../assets/icon_virtuais.png')} />
             <Text style={styles.links}>
-                <Text style={styles.tituloLink}>Crimes Violentos{"\n"}</Text>
-                Violência doméstica, assaltos, homicídios ou outros crimes de natureza violenta
+                <Text style={styles.tituloLink}>Calúnia{"\n"}</Text>
+                Mentir sobre pessoas ou empresas afim de difamar ou prejudicar a vítina
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.containerLinks}
             onPress={ () => {
-              this.props.navigation.navigate("TipoCrimes");
+              this.props.navigation.navigate("Endereco");
             }}
           >
-            <Image style={styles.img} source={require('../assets/icon_tributario.png')} />
+            <Image style={styles.img} source={require('../assets/icon_virtuais.png')} />
             <Text style={styles.links}>
-                <Text style={styles.tituloLink}>Crimes Tributários{"\n"}</Text>
-                Crimes cometidos contra a ordem tributária, econômica e contra as relações de consumo
+                <Text style={styles.tituloLink}>Calúnia{"\n"}</Text>
+                Mentir sobre pessoas ou empresas afim de difamar ou prejudicar a vítina
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.containerLinks}
             onPress={ () => {
-              this.props.navigation.navigate("TipoCrimes");
+              this.props.navigation.navigate("Endereco");
             }}
           >
-            <Image style={styles.img} source={require('../assets/icon_faccoes.png')} />
+            <Image style={styles.img} source={require('../assets/icon_virtuais.png')} />
             <Text style={styles.links}>
-                <Text style={styles.tituloLink}>Crimes de Facções{"\n"}</Text>
-                Formação de quadrilha, porte ilegal de armas ou pontos de venda de drogas
+                <Text style={styles.tituloLink}>Calúnia{"\n"}</Text>
+                Mentir sobre pessoas ou empresas afim de difamar ou prejudicar a vítina
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.containerLinks}
             onPress={ () => {
-              this.props.navigation.navigate("TipoCrimes");
+              this.props.navigation.navigate("Endereco");
             }}
           >
             <Image style={styles.img} source={require('../assets/icon_outros.png')} />
             <Text style={styles.links}>
                 <Text style={styles.tituloLink}>Outros{"\n"}</Text>
-                Outras ações criminosas ou ilícita
+                Outros tipos de crimes cibernéticos
             </Text>
           </TouchableOpacity>
         </View> 

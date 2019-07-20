@@ -1,11 +1,7 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, TextInput, ScrollView, Button } from 'react-native';
+import { Text, View, StyleSheet, TextInput, ScrollView, Button, TouchableOpacity } from 'react-native';
 import Constants from 'expo-constants';
 
-// You can import from local files
-import AssetExample from './components/AssetExample';
-
-// or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
 
 export default class App extends React.Component {
@@ -40,9 +36,13 @@ export default class App extends React.Component {
                     numberOfLines={50}
                 />
             </View>
-            <View style={styles.buttonArea}>
+            <TouchableOpacity style={styles.buttonArea}
+              onPress={ () => {
+                this.props.navigation.navigate("Test");
+              }}
+            >
               <Text style={styles.button}>Próximo</Text>
-            </View>
+            </TouchableOpacity>
         </View>
       </ScrollView>
     );

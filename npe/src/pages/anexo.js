@@ -1,11 +1,7 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image, ScrollView, Button } from 'react-native';
+import { Text, View, StyleSheet, Image, ScrollView, Button, TouchableOpacity } from 'react-native';
 import Constants from 'expo-constants';
 
-// You can import from local files
-import AssetExample from './components/AssetExample';
-
-// or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
 
 export default class App extends React.Component {
@@ -15,60 +11,84 @@ export default class App extends React.Component {
         <View style={styles.container}>
           <Text style={styles.titulo}>Anexos</Text>
           <Text style={styles.hr}>______________________________________</Text>
-          <View style={styles.containerLinks}>
+          <TouchableOpacity style={styles.containerLinks}
+            onPress={ () => {
+              this.props.navigation.navigate("Endereco");
+            }}
+          >
             <Image
               style={styles.img}
-              source={require('/assets/icon_documento.png')}
+              source={require('../assets/icon_documento.png')}
             />
             <Text style={styles.links}>
               <Text style={styles.tituloLink}>Documentos{'\n'}</Text>
               Arquivo de texto, PDF, Planilhas ou apresentação de slides
             </Text>
-          </View>
-          <View style={styles.containerLinks}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.containerLinks}
+            onPress={ () => {
+              this.props.navigation.navigate("Endereco");
+            }}
+          >
             <Image
               style={styles.img}
-              source={require('/assets/icon_audio.png')}
+              source={require('../assets/icon_audio.png')}
             />
             <Text style={styles.links}>
               <Text style={styles.tituloLink}>Áudio{'\n'}</Text>
               Gravação de áudio, telefonemas, etc.
             </Text>
-          </View>
-          <View style={styles.containerLinks}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.containerLinks}
+            onPress={ () => {
+              this.props.navigation.navigate("Endereco");
+            }}
+          >
             <Image
               style={styles.img}
-              source={require('/assets/icon_video.png')}
+              source={require('../assets/icon_video.png')}
             />
             <Text style={styles.links}>
               <Text style={styles.tituloLink}>Vídeo{'\n'}</Text>
               Gravação de câmeras de segurança, filmagens etc.
             </Text>
-          </View>
-          <View style={styles.containerLinks}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.containerLinks}
+            onPress={ () => {
+              this.props.navigation.navigate("Endereco");
+            }}
+          >
             <Image
               style={styles.img}
-              source={require('/assets/icon_imagem.png')}
+              source={require('../assets/icon_imagem.png')}
             />
             <Text style={styles.links}>
               <Text style={styles.tituloLink}>Imagem{'\n'}</Text>
               Imagens de documentos, ações criminosas, locais etc.
             </Text>
-          </View>
-          <View style={styles.containerLinks}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.containerLinks}
+            onPress={ () => {
+              this.props.navigation.navigate("Endereco");
+            }}
+          >
             <Image
               style={styles.img}
-              source={require('/assets/icon_link.png')}
+              source={require('../assets/icon_link.png')}
             />
             <Text style={styles.links}>
               <Text style={styles.tituloLink}>Link{'\n'}</Text>
               Endereço de páginas da web, arquivos online etc.
             </Text>
-          </View>
+          </TouchableOpacity>
         </View>
-        <View style={styles.buttonArea}>
+        <TouchableOpacity style={styles.buttonArea}
+          onPress={ () => {
+            this.props.navigation.navigate("Endereco");
+          }}
+        >
           <Text style={styles.button}>Salvar</Text>
-        </View>
+        </TouchableOpacity>
       </ScrollView>
     );
   }
