@@ -1,0 +1,5162 @@
+.bs4_modal:before, .bs4_modal > .modal-dialog {
+  top: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.bs4_modal_trigger:link, .bs4_modal_trigger:visited {
+  margin: 25px;
+  outline: 0;
+  color: #000;
+  text-shadow: none;
+  font-family: Arial;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  -webkit-font-smoothing: antialiased;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_modal_trigger:active, .bs4_modal_trigger:hover {
+  outline: 0;
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox > label, .bs4_form_general > .modal-dialog > .modal-content .bs4_form_header > h3, .bs4_form_general > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > label, .bs4_form_general > .modal-dialog > .modal-content .bs4_radio > label, .bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > textarea, .bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > textarea > label, .bs4_subscribe_txt > h1, .bs4_subscribe_txt > p {
+  text-shadow: none;
+  font-family: Raleway,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bs4_sldr_img_btn, .bs4_sldr_sc_content > a, .bs4_sldr_thumb_btn, .bs4_sldr_thumb_txt > a, .bs4_sldr_vid_btn, .bs4_sngl_img_btn, .bs4_sngl_vid_btn {
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans',sans-serif;
+}
+
+.bs4_sldr_sc_header > h1, .bs4_sngl_image > a {
+  text-shadow: none;
+  font-family: 'Poiret One',cursive;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bs4_modal {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.bs4_modal a:link, .bs4_modal a:visited {
+  text-decoration: none;
+}
+
+.bs4_modal:before {
+  width: 100%;
+  content: "";
+  height: 100%;
+  margin: auto;
+}
+
+.bs4_modal > .modal-dialog {
+  width: auto;
+  background: 0 0;
+}
+
+@media (min-width:768px) {
+  .bs4_modal > .modal-dialog {
+    margin: auto;
+  }
+}
+
+.bs4_modal > .modal-dialog > .modal-content {
+  outline: 0;
+  width: 100%;
+  border: none;
+  display: block!important;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: transparent;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_header, .bs4_form_general > .modal-dialog > .modal-content .bs4_subscribe_close {
+  height: 60px;
+  position: relative;
+  text-align: center;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_header:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  width: 100%;
+  height: 1px;
+  content: "";
+  margin: auto;
+  position: absolute;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_header > h3 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 40%;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 300;
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_form_general > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_form_general > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_form_general > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited {
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  position: absolute;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_body {
+  height: 480px;
+  padding: 10px 25px;
+  position: relative;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt {
+  padding: 10px 0;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > input {
+  height: 48px;
+  width: 100%;
+  display: block;
+  padding: 0 20px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > input:focus {
+  outline: 0;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_textarea {
+  padding: 10px 0;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > textarea {
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > textarea:focus {
+  outline: 0;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.bs4_input_inline .bs4_input_txt {
+  width: 49.4%;
+  display: inline-block;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > textarea::-webkit-input-placeholder {
+  text-transform: capitalize;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > input::-moz-placeholder {
+  text-transform: capitalize;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > textarea::-moz-placeholder {
+  text-transform: capitalize;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > input:-ms-input-placeholder {
+  text-transform: capitalize;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > textarea:-ms-input-placeholder {
+  text-transform: capitalize;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_input_txt > input:-moz-placeholder {
+  text-transform: capitalize;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_textarea > textarea:-moz-placeholder {
+  text-transform: capitalize;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox > label {
+  top: 0;
+  bottom: 0;
+  left: 50px;
+  margin: auto;
+  height: 35px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 35px;
+  position: absolute;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox > label > a {
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox {
+  height: 100%;
+  margin-top: 5px;
+  position: relative;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox > div {
+  width: 38px;
+  height: 38px;
+  margin-top: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox > div > input {
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 5;
+  opacity: 0;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  vertical-align: middle;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox > div > span {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox > div > input + span:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 18px;
+  text-shadow: none;
+  text-align: center;
+  position: absolute;
+  vertical-align: middle;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_radio {
+  width: 90px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0 20px;
+}
+
+.bs4_radio > div, .bs4_radio > div > input, .bs4_radio > div > span {
+  width: 38px;
+  height: 38px;
+  left: 0;
+  top: 0;
+}
+
+.bs4_radio > div {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  display: inline-block;
+}
+
+.bs4_radio > div > input {
+  margin: 0;
+  z-index: 5;
+  opacity: 0;
+  position: absolute;
+  vertical-align: middle;
+}
+
+.bs4_radio > div > span {
+  z-index: 1;
+  position: absolute;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_radio > div > input:checked + span:before {
+  opacity: 1;
+}
+
+.bs4_radio > div > input + span:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  content: '';
+  width: 19px;
+  height: 19px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  position: absolute;
+  vertical-align: middle;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_radio > label {
+  top: 0;
+  bottom: 0;
+  left: 48px;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 40px;
+  position: absolute;
+  text-transform: capitalize;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_submit > button {
+  left: 0;
+  right: 0;
+  padding: 0;
+  outline: 0;
+  width: 150px;
+  border: none;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  margin: 10px auto 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_footer {
+  height: 55px;
+  position: relative;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_footer:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  margin: auto;
+  bottom: auto;
+  position: absolute;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_footer > ul {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  width: 90%;
+  height: 35px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  list-style-type: none;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_footer > ul > li {
+  display: inline-block;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  text-shadow: none;
+  line-height: 35px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_search .bs4_input_txt {
+  width: 80%;
+  padding: 0;
+  display: inline-block;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_search .bs4_input_txt > input {
+  margin: 0;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_search .bs4_form_submit {
+  width: 20%;
+  position: absolute;
+  display: inline-block;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_search .bs4_form_submit > button {
+  margin: 0;
+  width: 100%;
+  height: 48px;
+}
+
+.bs4_subscribe {
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.bs4_subscribe_txt {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.bs4_subscribe_txt > h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bs4_subscribe_txt > p {
+  font-weight: 400;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_subscribe .bs4_input_txt {
+  width: 80%;
+  margin: auto;
+}
+
+.bs4_form_general > .modal-dialog > .modal-content .bs4_subscribe .bs4_form_submit {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_form_general > .modal-dialog {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_form_general > .modal-dialog > .modal-content .bs4_form_body {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_form_general > .modal-dialog > .modal-content .bs4_checkbox > label > a {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_input_inline .bs4_input_txt {
+    width: 49.2%;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_size_contact > .modal-dialog > .modal-content .bs4_form_header > h3 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_form_general > .modal-dialog {
+    width: 75%;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_input_inline .bs4_input_txt {
+    width: 49.2%;
+  }
+}
+
+#bs4_sldr_img {
+  overflow: hidden;
+  position: relative;
+}
+
+#bs4_sldr_img:hover, #bs4_sldr_thumbnail:hover, #bs4_sldr_video:hover {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+#bs4_sldr_img:active, #bs4_sldr_thumbnail:active, #bs4_sldr_video:active {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+#bs4_sldr_img > .carousel-inner > .carousel-item, #bs4_sldr_vid > .carousel-inner > .carousel-item {
+  padding: 75px 0 10px;
+}
+
+#bs4_sldr_img > .carousel-inner > .carousel-item > a > img, #bs4_sldr_img > .carousel-inner > .carousel-item > img {
+  width: 50%;
+  margin: auto;
+  display: block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.bs4_sldr_img_control .carousel-control-next, .bs4_sldr_img_control .carousel-control-prev {
+  top: 45%;
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  font-size: 35px;
+  cursor: pointer;
+  font-weight: 400;
+  overflow: hidden;
+  line-height: 50px;
+  text-shadow: none;
+  position: absolute;
+  background: 0 0;
+  color: rgba(255,255,255,.5);
+  font-family: Dosis,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all .5s cubic-bezier(.455,.03,.515,.955);
+  transition: all .5s cubic-bezier(.455,.03,.515,.955);
+}
+
+.bs4_sldr_img_control .carousel-control-prev {
+  left: 8%;
+  right: auto;
+}
+
+.bs4_sldr_img_control .carousel-control-next {
+  right: 8%;
+  left: auto;
+}
+
+.bs4_sldr_img_control .carousel-control-next:hover, .bs4_sldr_img_control .carousel-control-prev:hover {
+  background: 0 0;
+}
+
+.bs4_sldr_img_btn {
+  top: 10px;
+  right: 10px;
+  color: #000;
+  background: #f2f2f2;
+}
+
+.bs4_sldr_img_btn:hover {
+  color: #fff;
+}
+
+.bs4_sq_txt_close {
+  width: 60px;
+  height: 25px;
+  z-index: 100;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  letter-spacing: .5px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width:480px) {
+  #bs4_sldr_img > .carousel-inner > .carousel-item {
+    padding: 75px 0 10px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  #bs4_sldr_img > .carousel-inner > .carousel-item > a > img, #bs4_sldr_img > .carousel-inner > .carousel-item > img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_img_control .carousel-control-prev {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_img_control .carousel-control-next {
+    left: auto;
+    right: 0;
+  }
+}
+
+.bs4_sldr_vid_btn {
+  top: 10px;
+  right: 10px;
+  margin: auto;
+  background: #343434;
+  color: rgba(255,255,255,.7);
+}
+
+.bs4_sldr_vid_btn:hover {
+  color: #fff;
+}
+
+.bs4_sldr_vid_control .carousel-control-next, .bs4_sldr_vid_control .carousel-control-prev {
+  top: 45%;
+  opacity: 1;
+  width: 40px;
+  bottom: auto;
+  height: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  overflow: hidden;
+  line-height: 45px;
+  text-shadow: none;
+  position: absolute;
+  background: #343434;
+  color: rgba(255,255,255,.7);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all .6s cubic-bezier(.3,1,0,1);
+  transition: all .6s cubic-bezier(.3,1,0,1);
+}
+
+.bs4_sldr_vid_control .carousel-control-next span, .bs4_sldr_vid_control .carousel-control-prev span {
+  font-size: 30px;
+}
+
+.bs4_sldr_vid_control .carousel-control-prev {
+  left: 1%;
+  right: auto;
+}
+
+.bs4_sldr_vid_control .carousel-control-next {
+  left: auto;
+  right: 1%;
+}
+
+.bs4_sldr_vid_control .carousel-control-next:hover, .bs4_sldr_vid_control .carousel-control-prev:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.bs4_sldr_video_slf_host, .bs4_sldr_video_vimeo, .bs4_sldr_video_youtube {
+  width: 65%;
+  margin: auto;
+  height: 500px;
+}
+
+.bs4_sldr_video_slf_host > video, .bs4_sldr_video_vimeo > iframe, .bs4_sldr_video_youtube > iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: 0;
+  background: 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_video_slf_host, .bs4_sldr_video_vimeo, .bs4_sldr_video_youtube {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_sldr_video_slf_host, .bs4_sldr_video_vimeo, .bs4_sldr_video_youtube {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_video_slf_host, .bs4_sldr_video_vimeo, .bs4_sldr_video_youtube {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+.bs4_sldr_thumb_btn {
+  top: 10px;
+  right: 10px;
+  margin: auto;
+  background: #343434;
+  color: rgba(255,255,255,.7);
+}
+
+.bs4_sldr_thumb_btn:hover {
+  color: #fff;
+}
+
+#bs4_sldr_thumbnail {
+  height: 643px;
+  padding: 25px 0;
+}
+
+#bs4_sldr_thumbnail > .carousel-inner {
+  width: 60%;
+  margin: auto;
+  max-height: 500px;
+  border: 1px solid #fff;
+}
+
+#bs4_sldr_thumbnail:hover {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+#bs4_sldr_thumbnail:active {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+#bs4_sldr_thumbnail > .carousel-inner > .carousel-item > a > img, #bs4_sldr_thumbnail > .carousel-inner > .carousel-item > img {
+  width: 100%;
+  margin: auto;
+}
+
+.bs4_sldr_thumb_indicators .carousel-indicators {
+  padding: 0;
+  font-size: 0;
+  display: block;
+}
+
+.bs4_sldr_thumb_indicators .carousel-indicators li:after, .bs4_sldr_thumb_indicators .carousel-indicators li:before {
+  display: none;
+}
+
+.bs4_sldr_thumb_indicators > .carousel-indicators {
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 60%;
+  bottom: 20px;
+  margin: auto;
+  font-size: 0;
+  padding: 5px 0;
+  cursor: e-resize;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.bs4_sldr_thumb_indicators > .carousel-indicators li {
+  width: 15%;
+  padding: 0;
+  height: 100%;
+  text-indent: 0;
+  margin: 0 2px;
+  cursor: pointer;
+  display: inline-block;
+  background: 0 0;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all .6s cubic-bezier(.3,1,0,1);
+  transition: all .6s cubic-bezier(.3,1,0,1);
+}
+
+.bs4_sldr_thumb_indicators > .carousel-indicators .active {
+  width: 15%;
+  height: 100%;
+  margin: 0 2px;
+  background: 0 0;
+}
+
+.bs4_sldr_thumb_indicators > .carousel-indicators li img {
+  opacity: 1;
+  width: 100%;
+  display: block;
+}
+
+.bs4_sldr_thumb_indicators > .carousel-indicators::-webkit-scrollbar {
+  height: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_sldr_thumb_indicators > .carousel-indicators::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_sldr_thumb_txt {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.bs4_sldr_thumb_txt > a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: all .6s cubic-bezier(.3,1,0,1);
+  transition: all .6s cubic-bezier(.3,1,0,1);
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_thumb_btn {
+    top: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  #bs4_sldr_thumbnail {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  #bs4_sldr_thumbnail > .carousel-inner {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_thumb_indicators > .carousel-indicators {
+    width: 95%;
+    bottom: -30px;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  #bs4_sldr_thumbnail, #bs4_sldr_thumbnail > .carousel-inner {
+    height: auto;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_sldr_thumb_indicators > .carousel-indicators {
+    bottom: -30px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  #bs4_sldr_thumbnail, #bs4_sldr_thumbnail > .carousel-inner {
+    height: auto;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_thumb_indicators > .carousel-indicators {
+    bottom: -60px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1250px) {
+  #bs4_sldr_thumbnail, #bs4_sldr_thumbnail > .carousel-inner {
+    height: auto;
+  }
+}
+
+@media (min-width:992px) and (max-width:1250px) {
+  .bs4_sldr_thumb_indicators > .carousel-indicators {
+    bottom: -60px;
+  }
+}
+
+.bs4_sldr_sc_cl_btn {
+  top: 10px;
+  right: 10px;
+  margin: auto;
+  color: #000;
+  background: #f2f2f2;
+}
+
+.bs4_sldr_sc_cl_btn:hover {
+  color: #fff;
+}
+
+.bs4_sldr_sc_gen, .bs4_sldr_sc_gen > .carousel-inner, .bs4_sldr_sc_gen > .carousel-inner > .carousel-item {
+  overflow: hidden;
+}
+
+.bs4_sldr_sc_gen {
+  padding: 50px 0 60px;
+}
+
+.bs4_sldr_sc_gen > .carousel-inner {
+  width: 75%;
+  margin: auto;
+}
+
+.bs4_sldr_sc_gen:hover {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.bs4_sldr_sc_gen:active {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.bs4_sldr_sc_gen > .carousel-inner > .carousel-item .row {
+  margin: 0;
+}
+
+.bs4_sldr_sc_gen > .carousel-inner > .carousel-item .row > .col, .bs4_sldr_sc_gen > .carousel-inner > .carousel-item .row > div {
+  padding: 0;
+}
+
+.bs4_sldr_sc_header {
+  width: 75%;
+  margin: auto auto 40px;
+  text-align: center;
+}
+
+.bs4_sldr_sc_header > h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bs4_sldr_sc_control .carousel-control-next, .bs4_sldr_sc_control .carousel-control-prev {
+  top: 50%;
+  opacity: 1;
+  width: 30px;
+  bottom: auto;
+  height: 30px;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  line-height: 30px;
+  text-shadow: none;
+  text-align: center;
+  position: absolute;
+  background: #f2f2f2;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all .6s cubic-bezier(.22,.81,.01,.99);
+  transition: all .6s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_sldr_sc_control .carousel-control-next > span, .bs4_sldr_sc_control .carousel-control-prev > span {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.bs4_sldr_sc_control .carousel-control-prev {
+  left: 5%;
+}
+
+.bs4_sldr_sc_control .carousel-control-next {
+  right: 5%;
+}
+
+.bs4_sldr_sc_control .carousel-control-next:hover, .bs4_sldr_sc_control .carousel-control-prev:hover {
+  color: #fff;
+}
+
+.bs4_sldr_sc_content {
+  padding: 13px;
+  text-align: center;
+}
+
+.bs4_sldr_sc_content > img {
+  width: 100%;
+  display: block;
+}
+
+.bs4_sldr_sc_content_col_2 > img {
+  width: 50%;
+  margin: auto;
+}
+
+.bs4_sldr_sc_content > a {
+  opacity: 0;
+  color: #000;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 15px;
+  padding: 7px 25px;
+  visibility: hidden;
+  background: #f2f2f2;
+  text-transform: uppercase;
+  -webkit-transition: all .6s cubic-bezier(.22,.81,.01,.99);
+  transition: all .6s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_sldr_sc_content_col > a, .bs4_sldr_sc_content_col_2 > a {
+  font-size: 19px;
+  padding: 12px 30px;
+}
+
+.bs4_sldr_sc_content:hover > a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bs4_sldr_sc_content > a:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_sc_control .carousel-control-prev {
+    left: 3%;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_sc_control .carousel-control-next {
+    right: 3%;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_sc_content_col_2 > img {
+    width: 80%;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_sldr_sc_content > img {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_sc_content_col_2 > img {
+    width: 80%;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_sc_content_mov_2 {
+    padding: 3px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_sc_content_mov_2 > a {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1150px) {
+  .bs4_sldr_sc_content {
+    padding: 3px;
+  }
+}
+
+a.bs4_sldr_cmrce_close:link, a.bs4_sldr_cmrce_close:visited {
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 25px;
+  z-index: 100;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  position: absolute;
+  background: #f7f7f7;
+  display: inline-block;
+  border: 1px solid #eaeaea;
+  text-transform: capitalize;
+}
+
+a.bs4_sldr_cmrce_close:active, a.bs4_sldr_cmrce_close:hover {
+  color: #fff;
+}
+
+.bs4_sldr_cmrce_close, .bs4_sldr_cmrce_txt > form > div > button, .bs4_sldr_cmrce_txt > form > div > input, .bs4_sldr_cmrce_txt > form > div > label, .bs4_sldr_cmrce_txt > form > div > select, .bs4_sldr_cmrce_txt > form > div > select > option, .bs4_sldr_cmrce_txt > h1, .bs4_sldr_cmrce_txt > h2, .bs4_sldr_cmrce_txt > p {
+  text-shadow: none;
+  font-family: Cairo,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bs4_size_sldr_cmrce > .modal-dialog > .modal-content .row {
+  margin: 0;
+}
+
+.bs4_size_sldr_cmrce > .modal-dialog > .modal-content .row > div {
+  padding: 0;
+}
+
+.bs4_size_sldr_cmrce > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_size_sldr_cmrce > .modal-dialog > .modal-content::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-inner {
+  background: #f7f7f7;
+}
+
+.bs4_sldr_cmrce_indicators:hover {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.bs4_sldr_cmrce_indicators:active {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-inner > .carousel-item {
+  padding: 50px;
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-inner > .carousel-item > a > img, .bs4_sldr_cmrce_indicators > .carousel-inner > .carousel-item > img {
+  width: 100%;
+  margin: auto;
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-indicators {
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+  bottom: 0;
+  margin: auto;
+  font-size: 0;
+  padding: 5px 0;
+  cursor: e-resize;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-indicators .active, .bs4_sldr_cmrce_indicators > .carousel-indicators li {
+  width: 12%;
+  height: 100%;
+  margin: 0 2px;
+  background: #f7f7f7;
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-indicators li {
+  opacity: 1;
+  padding: 0;
+  text-indent: 0;
+  cursor: pointer;
+  border: 1px solid #eaeaea;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all .6s cubic-bezier(.3,1,0,1);
+  transition: all .6s cubic-bezier(.3,1,0,1);
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-indicators li img {
+  width: 100%;
+  display: block;
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-indicators::-webkit-scrollbar {
+  height: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_sldr_cmrce_indicators > .carousel-indicators::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_sldr_cmrce_txt {
+  padding: 15px 25px 5px;
+}
+
+.bs4_sldr_cmrce_txt > h1 {
+  width: 80%;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 25;
+}
+
+.bs4_sldr_cmrce_txt > ul {
+  padding: 0;
+  margin: 20px 0;
+  list-style-type: none;
+}
+
+.bs4_sldr_cmrce_txt > ul > li {
+  display: inline-block;
+}
+
+.bs4_sldr_cmrce_txt > h2 {
+  width: 150px;
+  padding: 5px 0;
+  margin: 25px 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.bs4_sldr_cmrce_txt > p {
+  color: #000;
+}
+
+.bs4_sldr_cmrce_txt > form {
+  margin: 30px 0;
+}
+
+.bs4_sldr_cmrce_txt > form > div > label {
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.bs4_sldr_cmrce_txt > form > .bs4_form_color, .bs4_sldr_cmrce_txt > form > .bs4_form_num, .bs4_sldr_cmrce_txt > form > .bs4_form_size {
+  display: inline-block;
+}
+
+.bs4_sldr_cmrce_txt > form > .bs4_form_num {
+  margin-right: 20px;
+}
+
+.bs4_sldr_cmrce_txt > form > .bs4_form_size {
+  margin-left: 20px;
+}
+
+.bs4_sldr_cmrce_txt > form > .bs4_form_num > input {
+  width: 100px;
+  height: 40px;
+  color: #000;
+  font-size: 18px;
+  margin: 0 0 0 5px;
+  background: #f7f7f7;
+  display: inline-block;
+  border: 1px solid #eaeaea;
+}
+
+.bs4_sldr_cmrce_txt > form > .bs4_form_num > input:focus {
+  outline: 0;
+}
+
+.bs4_sldr_cmrce_txt > form > .bs4_form_color > select, .bs4_sldr_cmrce_txt > form > .bs4_form_size > select {
+  width: 100px;
+  height: 40px;
+  color: #000;
+  margin: 0 0 0 5px;
+  background: #f7f7f7;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+}
+
+.bs4_sldr_cmrce_txt > form > div > select > option {
+  text-transform: uppercase;
+}
+
+.bs4_sldr_cmrce_txt > form > .bs4_form_color > select:focus, .bs4_sldr_cmrce_txt > form > .bs4_form_size > select:focus {
+  outline: 0;
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.bs4_sldr_cmrce_txt > form > .bs4_form_cmrce_btn > button {
+  left: 0;
+  right: 0;
+  padding: 0;
+  outline: 0;
+  width: 150px;
+  border: none;
+  height: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 40px;
+  position: relative;
+  display: inline-block;
+  margin: 50px auto 0;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_cmrce_txt > form > .bs4_form_color, .bs4_sldr_cmrce_txt > form > .bs4_form_num, .bs4_sldr_cmrce_txt > form > .bs4_form_size {
+    margin: 10px 0;
+    display: block;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sldr_cmrce_txt > form > .bs4_form_color > select, .bs4_sldr_cmrce_txt > form > .bs4_form_num > input, .bs4_sldr_cmrce_txt > form > .bs4_form_size > select {
+    margin: 0;
+    display: block;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_sldr_cmrce_txt > form > .bs4_form_color, .bs4_sldr_cmrce_txt > form > .bs4_form_num, .bs4_sldr_cmrce_txt > form > .bs4_form_size {
+    margin: 10px 0;
+    display: block;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_sldr_cmrce_txt > form > .bs4_form_color > select, .bs4_sldr_cmrce_txt > form > .bs4_form_num > input, .bs4_sldr_cmrce_txt > form > .bs4_form_size > select {
+    margin: 0;
+    display: block;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_size_sldr_cmrce > .modal-dialog {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_cmrce_txt {
+    padding: 10px 15px 10px 25px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_cmrce_txt > h1 {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_cmrce_txt > ul {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_cmrce_txt > h2 {
+    width: 75px;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_cmrce_txt > p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_cmrce_txt > form {
+    margin: 0;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_cmrce_txt > form > .bs4_form_color > select, .bs4_sldr_cmrce_txt > form > .bs4_form_num > input, .bs4_sldr_cmrce_txt > form > .bs4_form_size > select {
+    margin: 0;
+    display: block;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_sldr_cmrce_txt > form > .bs4_form_cmrce_btn > button {
+    margin: 10px auto 0;
+  }
+}
+
+@media (min-width:992px) and (max-width:1229px) {
+  .bs4_sldr_cmrce_txt > form > .bs4_form_color > select, .bs4_sldr_cmrce_txt > form > .bs4_form_num > input, .bs4_sldr_cmrce_txt > form > .bs4_form_size > select {
+    margin: 0;
+    display: block;
+  }
+}
+
+.bs4_size_sldr_cmrce > .modal-dialog {
+  height: 95%;
+  max-width: 95%;
+}
+
+.bs4_size_sldr_cmrce > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_sldr_cmrce .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_sldr_cmrce .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:767px) {
+  .bs4_size_sldr_cmrce > .modal-dialog {
+    height: 87%;
+    max-width: 85%;
+  }
+}
+
+a.bs4_sngl_cmrce_close:link, a.bs4_sngl_cmrce_close:visited {
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 25px;
+  z-index: 100;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  position: absolute;
+  background: #f7f7f7;
+  display: inline-block;
+  border: 1px solid #eaeaea;
+  text-transform: capitalize;
+}
+
+a.bs4_sngl_cmrce_close:active, a.bs4_sngl_cmrce_close:hover {
+  color: #fff;
+}
+
+.bs4_sngl_cmrce_close, .bs4_sngl_cmrce_txt > form > div > button, .bs4_sngl_cmrce_txt > form > div > input, .bs4_sngl_cmrce_txt > form > div > label, .bs4_sngl_cmrce_txt > form > div > select, .bs4_sngl_cmrce_txt > form > div > select > option, .bs4_sngl_cmrce_txt > h1, .bs4_sngl_cmrce_txt > h2, .bs4_sngl_cmrce_txt > p {
+  text-shadow: none;
+  font-family: Cairo,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bs4_bnr_txt > a, .bs4_bnr_txt > h1, .bs4_bnr_txt > p, .bs4_bnr_txt > span, .bs4_prtflo_detail > a, .bs4_prtflo_main_header > h1, .bs4_prtflo_new:link, .bs4_prtflo_new:visited, .bs4_prtflo_old_price:link, .bs4_prtflo_old_price:visited, .bs4_prtflo_sale:link, .bs4_prtflo_sale:visited, .bs4_sngl_prtflo_btn, .bs4_team_btn, .bs4_team_img > span, .bs4_team_txt > a, .bs4_team_txt > h1, .bs4_team_txt > p {
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Titillium Web',sans-serif;
+}
+
+.bs4_sngl_cmrce_img > img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.bs4_sngl_cmrce_txt > form > .bs4_form_color, .bs4_sngl_cmrce_txt > form > .bs4_form_num, .bs4_sngl_cmrce_txt > form > .bs4_form_size, .bs4_sngl_cmrce_txt > ul > li {
+  display: inline-block;
+}
+
+.bs4_size_sngl_cmrce > .modal-dialog > .modal-content .row {
+  margin: 0;
+}
+
+.bs4_size_sngl_cmrce > .modal-dialog > .modal-content .row > div {
+  padding: 0;
+}
+
+.bs4_size_sngl_cmrce > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_size_sngl_cmrce > .modal-dialog > .modal-content::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_sngl_cmrce_txt {
+  padding: 20px 20px 10px;
+}
+
+.bs4_sngl_cmrce_txt > h1 {
+  margin: 0;
+  width: 85%;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bs4_sngl_cmrce_txt > ul {
+  padding: 0;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+.bs4_sngl_cmrce_txt > h2 {
+  width: 110px;
+  height: 35px;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
+}
+
+.bs4_sngl_cmrce_txt > p {
+  color: #000;
+}
+
+.bs4_sngl_cmrce_txt > form {
+  margin: 20px 0;
+}
+
+.bs4_sngl_cmrce_txt > form > div > label {
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.bs4_sngl_cmrce_txt > form > .bs4_form_num {
+  margin-right: 20px;
+}
+
+.bs4_sngl_cmrce_txt > form > .bs4_form_size {
+  margin-left: 20px;
+}
+
+.bs4_sngl_cmrce_txt > form > .bs4_form_num > input {
+  width: 100px;
+  height: 40px;
+  color: #000;
+  font-size: 18px;
+  background: #f7f7f7;
+  display: block;
+  border: 1px solid #eaeaea;
+}
+
+.bs4_sngl_cmrce_txt > form > .bs4_form_num > input:focus {
+  outline: 0;
+}
+
+.bs4_sngl_cmrce_txt > form > .bs4_form_color > select, .bs4_sngl_cmrce_txt > form > .bs4_form_size > select {
+  width: 100px;
+  height: 40px;
+  color: #000;
+  background: #f7f7f7;
+  display: block;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+}
+
+.bs4_sngl_cmrce_txt > form > div > select > option {
+  text-transform: uppercase;
+}
+
+.bs4_sngl_cmrce_txt > form > .bs4_form_color > select:focus, .bs4_sngl_cmrce_txt > form > .bs4_form_size > select:focus {
+  outline: 0;
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.bs4_sngl_cmrce_txt > form > .bs4_form_cmrce_btn > button {
+  left: 0;
+  right: 0;
+  padding: 0;
+  outline: 0;
+  width: 150px;
+  border: none;
+  height: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 40px;
+  position: relative;
+  display: inline-block;
+  margin: 30px auto 0;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.bs4_size_sngl_cmrce > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_sngl_cmrce .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_sngl_cmrce .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_size_sngl_cmrce > .modal-dialog {
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sngl_cmrce_txt > form > .bs4_form_color, .bs4_sngl_cmrce_txt > form > .bs4_form_num, .bs4_sngl_cmrce_txt > form > .bs4_form_size {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sngl_cmrce_txt > form > .bs4_form_num {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sngl_cmrce_txt > form > .bs4_form_size {
+    margin-left: 0;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_size_sngl_cmrce > .modal-dialog {
+    height: 98%;
+    max-width: 80%;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_sngl_cmrce_txt > form > .bs4_form_color, .bs4_sngl_cmrce_txt > form > .bs4_form_num, .bs4_sngl_cmrce_txt > form > .bs4_form_size {
+    display: block;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_sngl_cmrce_txt > form > .bs4_form_num {
+    margin-right: 0;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_sngl_cmrce_txt > form > .bs4_form_size {
+    margin-left: 0;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bs4_size_sngl_cmrce > .modal-dialog {
+    height: 75%;
+    max-width: 98%;
+  }
+}
+
+@media (min-width:992px) and (max-width:1229px) {
+  .bs4_size_sngl_cmrce > .modal-dialog {
+    height: 75%;
+    max-width: 98%;
+  }
+}
+
+@media (min-width:1230px) {
+  .bs4_size_sngl_cmrce > .modal-dialog {
+    height: 63%;
+    max-width: 71%;
+  }
+}
+
+.bs4_sngl_vid_btn {
+  top: 0;
+  right: 0;
+  margin: auto;
+  color: #000;
+  background: #f2f2f2;
+}
+
+.bs4_sngl_vid_btn:hover {
+  color: #fff;
+}
+
+.bs4_sngl_video {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  position: absolute;
+}
+
+.bs4_sngl_video > iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: 0;
+  background: 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.bs4_size_sngl_vid > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_sngl_img_btn {
+  top: 10px;
+  right: 10px;
+  margin: auto;
+  color: #000;
+  background: #f2f2f2;
+}
+
+.bs4_sngl_img_btn:hover {
+  color: #fff;
+}
+
+.bs4_sngl_image {
+  left: 0;
+  right: 0;
+  width: 55%;
+  margin: 50px auto;
+  position: absolute;
+}
+
+.bs4_sngl_image > img {
+  width: 100%;
+  display: block;
+}
+
+.bs4_sngl_image > a {
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+.bs4_size_sngl_img > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_size_sngl_vid > .modal-dialog > .modal-content::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_sngl_image {
+    width: 80%;
+  }
+}
+
+.bs4_sngl_prtflo_btn {
+  top: 10px;
+  right: 10px;
+  margin: auto;
+  color: #000;
+  background: #f2f2f2;
+}
+
+.bs4_sngl_prtflo_btn:hover {
+  color: #fff;
+}
+
+.bs4_portfolio {
+  position: relative;
+}
+
+.bs4_portfolio > .row {
+  margin: 0;
+}
+
+.bs4_portfolio > .row > div {
+  padding: 13px;
+}
+
+.bs4_prtflo_main_header {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.bs4_prtflo_main_header > h1 {
+  color: #424242;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 13px;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.bs4_prtflo_wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.bs4_prtflo_image {
+  padding: 25px 0;
+  overflow: hidden;
+  position: relative;
+  background: #f2f2f2;
+}
+
+.bs4_prtflo_image > img {
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.bs4_prtflo_new:link, .bs4_prtflo_new:visited, .bs4_prtflo_old_price:link, .bs4_prtflo_old_price:visited, .bs4_prtflo_sale:link, .bs4_prtflo_sale:visited {
+  top: 10px;
+  z-index: 1;
+  height: 25px;
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.bs4_prtflo_new {
+  left: 10px;
+  width: 50px;
+  font-size: 12px;
+  background: #c0a063;
+}
+
+.bs4_prtflo_sale {
+  right: 10px;
+  width: 50px;
+  font-size: 12px;
+  background: #4f8af0;
+}
+
+.bs4_prtflo_old_price:link, .bs4_prtflo_old_price:visited {
+  left: 0;
+  right: 0;
+  width: 70px;
+  margin: auto;
+  font-size: 13px;
+  background: #ff5252;
+  text-decoration: line-through!important;
+}
+
+.bs4_prtflo_icons {
+  left: 0;
+  right: 0;
+  top: auto;
+  height: 50px;
+  bottom: -50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  background: rgba(255,255,255,.5);
+  -webkit-transition: bottom .3s ease-out;
+  transition: bottom .3s ease-out;
+}
+
+.bs4_prtflo_icons > a {
+  width: 30px;
+  height: 30px;
+  margin: 0 2px;
+  color: #fff;
+  line-height: 30px;
+  background: #ababab;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transition: all .7s cubic-bezier(.3,1,0,1);
+  transition: all .7s cubic-bezier(.3,1,0,1);
+}
+
+.bs4_prtflo_icons > a:hover {
+  color: #fff;
+}
+
+.bs4_prtflo_wrapper:hover > .bs4_prtflo_image > .bs4_prtflo_icons {
+  bottom: 0;
+}
+
+.bs4_prtflo_footer {
+  text-align: center;
+}
+
+.bs4_prtflo_detail {
+  padding: 10px 5px;
+  position: relative;
+}
+
+.bs4_prtflo_detail > a {
+  display: block;
+  text-decoration: none;
+}
+
+.bs4_prtflo_detail > a:nth-child(1) {
+  color: #343434;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: capitalize;
+  -webkit-transition: color .7s cubic-bezier(.3,1,0,1);
+  transition: color .7s cubic-bezier(.3,1,0,1);
+}
+
+.bs4_bnr_txt > h1, .bs4_bnr_txt > p, .bs4_team_img > span, .bs4_team_txt > a {
+  letter-spacing: 1px;
+}
+
+.bs4_bnr_txt > a, .bs4_bnr_txt > h1, .bs4_team_txt > a, .bs4_team_txt > h1 {
+  text-transform: uppercase;
+}
+
+.bs4_prtflo_detail > a:nth-child(2) {
+  color: #4f8af0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  -webkit-transition: all 1s cubic-bezier(.3,1,0,1);
+  transition: all 1s cubic-bezier(.3,1,0,1);
+}
+
+.bs4_team_btn {
+  top: 0;
+  right: 0;
+  margin: auto;
+  color: #34495e;
+  background: #fff;
+}
+
+.bs4_team_btn:hover {
+  color: #fff;
+}
+
+.bs4_team_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #fff;
+}
+
+.bs4_team_img {
+  top: -45px;
+  left: 15px;
+  width: 25%;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+}
+
+.bs4_team_img > img {
+  width: 100%;
+}
+
+.bs4_team_img > span {
+  color: #34495e;
+  display: block;
+  font-size: 14px;
+  margin: 15px 0 10px;
+}
+
+.bs4_team_img > span > span {
+  margin-right: 15px;
+}
+
+.bs4_team_img > ul {
+  padding: 0;
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+.bs4_team_img > ul > li {
+  display: inline-block;
+}
+
+.bs4_team_img > ul > li > a {
+  padding: 5px;
+  display: block;
+  color: #34495e;
+  -webkit-transition: color .7s cubic-bezier(.3,1,0,1);
+  transition: color .7s cubic-bezier(.3,1,0,1);
+}
+
+.bs4_team_txt {
+  top: 0;
+  width: 70%;
+  right: 15px;
+  padding: 25px;
+  position: absolute;
+  display: inline-block;
+}
+
+.bs4_team_txt > h1 {
+  color: #34495e;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.bs4_team_txt > p {
+  color: #34495e;
+}
+
+.bs4_team_txt > a {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 25px;
+  padding: 7px 20px;
+}
+
+.bs4_team_txt > a:hover {
+  color: #fff;
+}
+
+.bs4_size_team > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_size_team > .modal-dialog > .modal-content::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_team_content {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_team_img, .bs4_team_txt {
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    padding: 10px 5px;
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_team_img > img {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_team_img > span {
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_team_txt > h1 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_team_txt > p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_team_txt > a {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_team_img {
+    padding: 0;
+    width: 30%;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_team_img > img {
+    width: 80%;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_team_txt {
+    width: 60%;
+    padding: 15px;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_team_txt > h1 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .bs4_team_txt > p {
+    font-size: 12px;
+  }
+}
+
+.bs4_socia_icons {
+  position: relative;
+}
+
+.bs4_socia_icons > ul {
+  padding: 0;
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+.bs4_socia_icons > ul > li {
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.bs4_socia_icons > ul > li > a {
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  display: block;
+  line-height: 45px;
+  text-align: center;
+}
+
+.bs4_socia_icons > ul > li > a:before {
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_facebook {
+  background: #3b5999;
+}
+
+.bs4_twitter {
+  background: #55acee;
+}
+
+.bs4_google {
+  background: #dd4b39;
+}
+
+.bs4_snapchat {
+  background: #fffc00;
+}
+
+.bs4_instagram {
+  background: #125688;
+}
+
+.bs4_skype {
+  background: #00aff0;
+}
+
+.bs4_tumblr {
+  background: #32506d;
+}
+
+.bs4_flickr {
+  background: #ff0084;
+}
+
+.bs4_behance {
+  background: #1769ff;
+}
+
+.bs4_youtube {
+  background: #b00;
+}
+
+.bs4_bnr_close {
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  z-index: 100;
+  font-size: 12px;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+}
+
+.bs4_bnr_img, .bs4_bnr_img > img, .bs4_bnr_txt {
+  width: 100%;
+  display: block;
+}
+
+.bs4_bnr_content {
+  position: relative;
+  background: #fff;
+}
+
+.bs4_bnr_img, .bs4_bnr_txt, .bs4_bnr_txt > span {
+  position: absolute;
+}
+
+.bs4_bnr_img {
+  top: 0;
+  overflow: hidden;
+}
+
+.bs4_bnr_img:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+}
+
+.bs4_bnr_txt {
+  top: 0;
+  right: 0;
+  height: auto;
+}
+
+.bs4_bnr_txt > h1 {
+  margin: 0;
+}
+
+.bs4_bnr_txt > a {
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.bs4_bnr_lg_txt {
+  padding: 5px 10px;
+}
+
+.bs4_bnr_sm_txt {
+  padding: 2px 5px;
+}
+
+.bs4_bnr_lg_txt > h1, .bs4_bnr_sm_txt > h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bs4_bnr_sm_txt > h1 {
+  margin-bottom: 5px;
+}
+
+.bs4_bnr_box_lg_txt > p, .bs4_bnr_lg_txt > p, .bs4_bnr_sm_txt > p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.bs4_bnr_lg_txt > span, .bs4_bnr_sm_txt > span {
+  right: 5px;
+  bottom: 5px;
+  font-size: 14px;
+}
+
+.bs4_bnr_lg_txt > a, .bs4_bnr_sm_txt > a {
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.bs4_bnr_box_lg_txt {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.bs4_bnr_box_lg_txt > img {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 10px auto;
+}
+
+.bs4_bnr_box_lg_txt > h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.bs4_bnr_box_lg_txt > span {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 14px;
+}
+
+.bs4_bnr_box_lg_txt > a {
+  width: 125px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 10px 0 30px;
+}
+
+.bs4_bnr_box_sm_txt {
+  padding: 5px;
+  text-align: center;
+}
+
+.bs4_bnr_side_lg_txt, .bs4_bnr_side_sm_txt {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.bs4_bnr_box_sm_txt > img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 5px auto;
+}
+
+.bs4_bnr_box_sm_txt > h1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.bs4_bnr_box_sm_txt > p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.bs4_bnr_box_sm_txt > span {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 14px;
+}
+
+.bs4_bnr_box_sm_txt > a {
+  width: 100px;
+  height: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 25px;
+  margin: 0 0 20px;
+}
+
+.bs4_bnr_side_lg_txt > img {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 25px auto;
+}
+
+.bs4_bnr_side_lg_txt > h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.bs4_bnr_side_lg_txt > span {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 14px;
+}
+
+.bs4_bnr_side_lg_txt > a {
+  width: 125px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 20px 0 50px;
+}
+
+.bs4_bnr_side_sm_txt > img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 10px auto;
+}
+
+.bs4_bnr_side_sm_txt > h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bs4_bnr_side_sm_txt > p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.bs4_bnr_side_sm_txt > span {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 14px;
+}
+
+.bs4_bnr_side_sm_txt > a {
+  width: 125px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 10px 0 30px;
+}
+
+@media only screen and (max-width:767px) {
+  .bs4_bnr_lg_img, .bs4_bnr_sm_img {
+    max-height: 110px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .bs4_bnr_lg_img > img, .bs4_bnr_sm_img > img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.bs4_size_banner_lg > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_size_banner_lg > .modal-dialog > .modal-content::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_size_banner_side_lg > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_size_banner_side_lg > .modal-dialog > .modal-content::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_size_banner_side_sm > .modal-dialog > .modal-content::-webkit-scrollbar {
+  width: 3px;
+  background: rgba(0,0,0,.3);
+}
+
+.bs4_size_banner_side_sm > .modal-dialog > .modal-content::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_bnr_img:before, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_bnr_img:before {
+  background: rgba(0,0,0,.7);
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_bnr_img:before, .bs4_bg_transp > .modal-dialog > .modal-content .bs4_bnr_img:before, .bs4_bg_white > .modal-dialog > .modal-content .bs4_bnr_img:before {
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_bnr_cl_btn, .bs4_bg_transp > .modal-dialog > .modal-content .bs4_bnr_cl_btn, .bs4_bg_white > .modal-dialog > .modal-content .bs4_bnr_cl_btn {
+  color: #fff;
+  background: rgba(0,0,0,.7);
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_bnr_cl_btn, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_bnr_cl_btn {
+  color: #000;
+  background: rgba(255,255,255,.7);
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_bnr_cl_btn:hover, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_bnr_cl_btn:hover {
+  color: #fff;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_bnr_txt > h1, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_bnr_txt > p, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_bnr_txt > span, .bs4_bg_transp > .modal-dialog > .modal-content .bs4_bnr_txt > h1, .bs4_bg_transp > .modal-dialog > .modal-content .bs4_bnr_txt > p, .bs4_bg_transp > .modal-dialog > .modal-content .bs4_bnr_txt > span, .bs4_bg_white > .modal-dialog > .modal-content .bs4_bnr_txt > h1, .bs4_bg_white > .modal-dialog > .modal-content .bs4_bnr_txt > p, .bs4_bg_white > .modal-dialog > .modal-content .bs4_bnr_txt > span {
+  color: #000;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_bnr_txt > h1, .bs4_bg_black > .modal-dialog > .modal-content .bs4_bnr_txt > p, .bs4_bg_black > .modal-dialog > .modal-content .bs4_bnr_txt > span, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_bnr_txt > h1, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_bnr_txt > p, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_bnr_txt > span {
+  color: #fff;
+}
+
+.bs4_size_signin > .modal-dialog {
+  height: 90%;
+  max-width: 100%;
+}
+
+.bs4_size_signin > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_signin .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_signin .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_signin > .modal-dialog {
+    height: 74%;
+    max-width: 435px;
+  }
+}
+
+.bs4_size_signin .bs4_form_body {
+  height: 350px!important;
+}
+
+.bs4_size_signup > .modal-dialog {
+  height: 97%;
+  max-width: 100%;
+}
+
+.bs4_size_signup > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_signup .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_signup .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_signup > .modal-dialog {
+    height: 97%;
+    max-width: 435px;
+  }
+}
+
+.bs4_size_signup .bs4_form_body {
+  height: 550px!important;
+}
+
+.bs4_size_contact > .modal-dialog {
+  height: 100%;
+  max-width: 100%;
+}
+
+.bs4_size_contact > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_contact .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_contact .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_contact > .modal-dialog {
+    height: 97%;
+    max-width: 435px;
+  }
+}
+
+.bs4_size_search > .modal-dialog {
+  height: 68px;
+}
+
+.bs4_size_search > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+@media (min-width:768px) {
+  .bs4_size_search > .modal-dialog {
+    max-width: 50%;
+    height: 68px;
+  }
+}
+
+.bs4_size_subscribe > .modal-dialog {
+  height: 95%;
+  max-width: 100%;
+}
+
+.bs4_size_subscribe > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_subscribe .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_subscribe .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_subscribe > .modal-dialog {
+    height: 66%;
+    max-width: 650px;
+  }
+}
+
+.bs4_size_sldr_img > .modal-dialog {
+  height: 100%;
+}
+
+.bs4_size_sldr_img > .modal-dialog > .modal-content, .bs4_size_sldr_sc > .modal-dialog > .modal-content, .bs4_size_sldr_thumb > .modal-dialog > .modal-content, .bs4_size_sldr_vid > .modal-dialog > .modal-content, .bs4_size_sngl_img > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width:768px) {
+  .bs4_size_sldr_img > .modal-dialog, .bs4_size_sldr_sc > .modal-dialog, .bs4_size_sldr_thumb > .modal-dialog, .bs4_size_sldr_vid > .modal-dialog, .bs4_size_sngl_img > .modal-dialog {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+.bs4_size_sldr_sc > .modal-dialog, .bs4_size_sldr_thumb > .modal-dialog, .bs4_size_sldr_vid > .modal-dialog, .bs4_size_sngl_img > .modal-dialog {
+  max-width: 100%;
+  height: 100%;
+}
+
+.bs4_size_sngl_vid > .modal-dialog {
+  height: 95%;
+  max-width: 95%;
+}
+
+.bs4_size_sngl_vid > .modal-dialog > .modal-content {
+  width: inherit;
+  height: inherit;
+  display: block;
+  overflow: hidden;
+}
+
+.bs4_size_sngl_vid .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_sngl_vid .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_sngl_vid > .modal-dialog {
+    height: 90%;
+    max-width: 70%;
+  }
+}
+
+.bs4_size_prtflo > .modal-dialog {
+  max-width: 100%;
+  height: 100%;
+}
+
+.bs4_size_prtflo > .modal-dialog > .modal-content {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width:768px) {
+  .bs4_size_prtflo > .modal-dialog {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+.bs4_size_team > .modal-dialog {
+  height: 340px;
+  max-width: 650px;
+}
+
+.bs4_size_team > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 50px;
+}
+
+@media (min-width:768px) {
+  .bs4_size_team > .modal-dialog {
+    height: 340px;
+    max-width: 650px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_bnr_box_lg_txt > img {
+    margin: 5px auto;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .bs4_size_team > .modal-dialog, .bs4_size_team > .modal-dialog > .modal-content {
+    height: auto;
+  }
+}
+
+.bs4_size_social > .modal-dialog {
+  height: 65px;
+  max-width: 100%;
+}
+
+.bs4_size_social > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+@media (min-width:768px) {
+  .bs4_size_social > .modal-dialog {
+    height: 65px;
+    max-width: 100%;
+  }
+}
+
+.bs4_size_social .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  height: 5px;
+  background: 0 0;
+}
+
+.bs4_size_social .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  width: 0;
+  height: 5px;
+  background: #e6e6e6;
+}
+
+.bs4_size_social.bs4_center > .modal-dialog {
+  text-align: center;
+}
+
+.bs4_size_social.bs4_left > .modal-dialog {
+  text-align: left;
+}
+
+.bs4_size_social.bs4_right > .modal-dialog {
+  text-align: right;
+}
+
+.bs4_size_social.bs4_top_center > .modal-dialog {
+  text-align: center;
+}
+
+.bs4_size_social.bs4_top_left > .modal-dialog {
+  text-align: left;
+}
+
+.bs4_size_social.bs4_top_right > .modal-dialog {
+  text-align: right;
+}
+
+.bs4_size_social.bs4_bottom_center > .modal-dialog {
+  text-align: center;
+}
+
+.bs4_size_social.bs4_bottom_left > .modal-dialog {
+  text-align: left;
+}
+
+.bs4_size_social.bs4_bottom_right > .modal-dialog {
+  text-align: right;
+}
+
+.bs4_size_banner_lg > .modal-dialog {
+  max-width: 100%;
+  height: 110px;
+}
+
+.bs4_bnr_lg_img > img, .bs4_size_banner_lg > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_banner_lg .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_banner_lg .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_banner_lg > .modal-dialog {
+    height: 90px;
+    max-width: 730px;
+  }
+}
+
+.bs4_size_banner_sm > .modal-dialog {
+  height: 65px;
+  max-width: 510px;
+}
+
+.bs4_bnr_sm_img > img, .bs4_size_banner_sm > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_banner_sm .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_banner_sm .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_banner_sm > .modal-dialog {
+    height: 65px;
+    max-width: 510px;
+  }
+}
+
+.bs4_size_banner_box_lg > .modal-dialog {
+  height: 350px;
+  max-width: 350px;
+}
+
+.bs4_bnr_box_lg_img > img, .bs4_size_banner_box_lg > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_banner_box_lg .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_banner_box_lg .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_banner_box_lg > .modal-dialog {
+    height: 350px;
+    max-width: 350px;
+  }
+}
+
+.bs4_size_banner_box_sm > .modal-dialog {
+  height: 210px;
+  max-width: 210px;
+}
+
+.bs4_bnr_box_sm_img > img, .bs4_size_banner_box_sm > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_banner_box_sm .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_banner_box_sm .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_banner_box_sm > .modal-dialog {
+    height: 210px;
+    max-width: 210px;
+  }
+}
+
+.bs4_size_banner_side_lg > .modal-dialog {
+  max-width: 150px;
+  height: 90%;
+}
+
+.bs4_bnr_side_lg_img > img, .bs4_size_banner_side_lg > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_banner_side_lg .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_banner_side_lg .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_banner_side_lg > .modal-dialog {
+    width: 150px;
+    height: 550px;
+  }
+}
+
+.bs4_size_banner_side_sm > .modal-dialog {
+  max-width: 150px;
+  height: 90%;
+}
+
+.bs4_bnr_side_sm_img > img, .bs4_size_banner_side_sm > .modal-dialog > .modal-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bs4_size_banner_side_sm .modal-dialog .modal-content::-webkit-scrollbar {
+  width: 0;
+  background: 0 0;
+}
+
+.bs4_size_banner_side_sm .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+@media (min-width:576px) {
+  .bs4_size_banner_side_sm > .modal-dialog {
+    max-width: 154px;
+    height: 360px;
+  }
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_blue > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button, .bs4_blue > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:before, .bs4_blue > .modal-dialog > .modal-content .bs4_form_header > a:before, .bs4_blue > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_blue > .modal-dialog > .modal-content .bs4_prtflo_icons > a:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_sc_content > a.bs4_sldr_sc_btn:before, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-next:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-prev:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-next:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-prev:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_subscribe_close > a:before, .bs4_blue > .modal-dialog > .modal-content .bs4_team_txt > a, .bs4_blue > .modal-dialog > .modal-content a.bs4_bnr_btn, .bs4_blue > .modal-dialog > .modal-content a.bs4_bnr_cl_btn:before, .bs4_blue > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:before, .bs4_blue > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:before, .bs4_blue > .modal-dialog > .modal-content a.bs4_sq_txt_close:before {
+  background: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_checkbox > label > a, .bs4_blue > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_blue > .modal-dialog > .modal-content .bs4_prtflo_detail > a:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-next:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-prev:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_thumb_txt > a:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_team_img > ul > li > a:hover, .bs4_blue > .modal-dialog > .modal-content form > .bs4_textarea > textarea {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2 {
+  border-top: 2px solid #4f8af0;
+  border-bottom: 2px solid #4f8af0;
+  font-family: roboto;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_blue > .modal-dialog > .modal-content .bs4_input_txt > input:focus, .bs4_blue > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_cmrce_indicators > .carousel-indicators .active, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_thumb_indicators > .carousel-indicators .active, .bs4_blue > .modal-dialog > .modal-content .bs4_textarea > textarea:focus, .bs4_blue > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:hover, .bs4_blue > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:hover {
+  border: 1px solid #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-webkit-input-placeholder {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-moz-placeholder {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-ms-input-placeholder {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-moz-placeholder {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-webkit-input-placeholder {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-moz-placeholder {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-ms-input-placeholder {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-moz-placeholder {
+  color: #4f8af0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_checkbox > label > a:hover, .bs4_blue > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > ul > li, .bs4_blue > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > ul > li {
+  color: #345ca0;
+}
+
+.bs4_blue > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button:before, .bs4_blue > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_blue > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > h2, .bs4_blue > .modal-dialog > .modal-content .bs4_team_txt > a:before, .bs4_blue > .modal-dialog > .modal-content a.bs4_bnr_btn:before {
+  background: #345ca0;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_green > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button, .bs4_green > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:before, .bs4_green > .modal-dialog > .modal-content .bs4_form_header > a:before, .bs4_green > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_green > .modal-dialog > .modal-content .bs4_prtflo_icons > a:hover, .bs4_green > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_sc_content > a.bs4_sldr_sc_btn:before, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-next:hover, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-prev:hover, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-next:hover, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-prev:hover, .bs4_green > .modal-dialog > .modal-content .bs4_subscribe_close > a:before, .bs4_green > .modal-dialog > .modal-content .bs4_team_txt > a, .bs4_green > .modal-dialog > .modal-content a.bs4_bnr_btn, .bs4_green > .modal-dialog > .modal-content a.bs4_bnr_cl_btn:before, .bs4_green > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:before, .bs4_green > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:before, .bs4_green > .modal-dialog > .modal-content a.bs4_sq_txt_close:before {
+  background: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_checkbox > label > a, .bs4_green > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_green > .modal-dialog > .modal-content .bs4_prtflo_detail > a:hover, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-next:hover, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-prev:hover, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_thumb_txt > a:hover, .bs4_green > .modal-dialog > .modal-content .bs4_team_img > ul > li > a:hover, .bs4_green > .modal-dialog > .modal-content form > .bs4_textarea > textarea {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2 {
+  border-top: 2px solid #75b00f;
+  border-bottom: 2px solid #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_green > .modal-dialog > .modal-content .bs4_input_txt > input:focus, .bs4_green > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_cmrce_indicators > .carousel-indicators .active, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_thumb_indicators > .carousel-indicators .active, .bs4_green > .modal-dialog > .modal-content .bs4_textarea > textarea:focus, .bs4_green > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:hover, .bs4_green > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:hover {
+  border: 1px solid #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-webkit-input-placeholder {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-moz-placeholder {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-ms-input-placeholder {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-moz-placeholder {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-webkit-input-placeholder {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-moz-placeholder {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-ms-input-placeholder {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-moz-placeholder {
+  color: #75b00f;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_checkbox > label > a:hover, .bs4_green > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > ul > li, .bs4_green > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > ul > li {
+  color: #4e750a;
+}
+
+.bs4_green > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button:before, .bs4_green > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_green > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > h2, .bs4_green > .modal-dialog > .modal-content .bs4_team_txt > a:before, .bs4_green > .modal-dialog > .modal-content a.bs4_bnr_btn:before {
+  background: #4e750a;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_red > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button, .bs4_red > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:before, .bs4_red > .modal-dialog > .modal-content .bs4_form_header > a:before, .bs4_red > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_red > .modal-dialog > .modal-content .bs4_prtflo_icons > a:hover, .bs4_red > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_sc_content > a.bs4_sldr_sc_btn:before, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-next:hover, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-prev:hover, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-next:hover, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-prev:hover, .bs4_red > .modal-dialog > .modal-content .bs4_subscribe_close > a:before, .bs4_red > .modal-dialog > .modal-content .bs4_team_txt > a, .bs4_red > .modal-dialog > .modal-content a.bs4_bnr_btn, .bs4_red > .modal-dialog > .modal-content a.bs4_bnr_cl_btn:before, .bs4_red > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:before, .bs4_red > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:before, .bs4_red > .modal-dialog > .modal-content a.bs4_sq_txt_close:before {
+  background: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_checkbox > label > a, .bs4_red > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_red > .modal-dialog > .modal-content .bs4_prtflo_detail > a:hover, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-next:hover, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-prev:hover, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_thumb_txt > a:hover, .bs4_red > .modal-dialog > .modal-content .bs4_team_img > ul > li > a:hover, .bs4_red > .modal-dialog > .modal-content form > .bs4_textarea > textarea {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2 {
+  border-top: 2px solid #ff5252;
+  border-bottom: 2px solid #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_red > .modal-dialog > .modal-content .bs4_input_txt > input:focus, .bs4_red > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_cmrce_indicators > .carousel-indicators .active, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_thumb_indicators > .carousel-indicators .active, .bs4_red > .modal-dialog > .modal-content .bs4_textarea > textarea:focus, .bs4_red > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:hover, .bs4_red > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:hover {
+  border: 1px solid #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-webkit-input-placeholder {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-moz-placeholder {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-ms-input-placeholder {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-moz-placeholder {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-webkit-input-placeholder {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-moz-placeholder {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-ms-input-placeholder {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-moz-placeholder {
+  color: #ff5252;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_checkbox > label > a:hover, .bs4_red > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > ul > li, .bs4_red > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > ul > li {
+  color: #aa3636;
+}
+
+.bs4_red > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button:before, .bs4_red > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_red > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > h2, .bs4_red > .modal-dialog > .modal-content .bs4_team_txt > a:before, .bs4_red > .modal-dialog > .modal-content a.bs4_bnr_btn:before {
+  background: #aa3636;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_gold > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button, .bs4_gold > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:before, .bs4_gold > .modal-dialog > .modal-content .bs4_form_header > a:before, .bs4_gold > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_gold > .modal-dialog > .modal-content .bs4_prtflo_icons > a:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_sc_content > a.bs4_sldr_sc_btn:before, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-next:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-prev:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-next:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-prev:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_subscribe_close > a:before, .bs4_gold > .modal-dialog > .modal-content .bs4_team_txt > a, .bs4_gold > .modal-dialog > .modal-content a.bs4_bnr_btn, .bs4_gold > .modal-dialog > .modal-content a.bs4_bnr_cl_btn:before, .bs4_gold > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:before, .bs4_gold > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:before, .bs4_gold > .modal-dialog > .modal-content a.bs4_sq_txt_close:before {
+  background: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_checkbox > label > a, .bs4_gold > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_gold > .modal-dialog > .modal-content .bs4_prtflo_detail > a:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-next:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-prev:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_thumb_txt > a:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_team_img > ul > li > a:hover, .bs4_gold > .modal-dialog > .modal-content form > .bs4_textarea > textarea {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2 {
+  border-top: 2px solid #fed700;
+  border-bottom: 2px solid #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_gold > .modal-dialog > .modal-content .bs4_input_txt > input:focus, .bs4_gold > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_cmrce_indicators > .carousel-indicators .active, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_thumb_indicators > .carousel-indicators .active, .bs4_gold > .modal-dialog > .modal-content .bs4_textarea > textarea:focus, .bs4_gold > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:hover, .bs4_gold > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:hover {
+  border: 1px solid #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-webkit-input-placeholder {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-moz-placeholder {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-ms-input-placeholder {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-moz-placeholder {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-webkit-input-placeholder {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-moz-placeholder {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-ms-input-placeholder {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-moz-placeholder {
+  color: #fed700;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_checkbox > label > a:hover, .bs4_gold > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > ul > li, .bs4_gold > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > ul > li {
+  color: #a98f00;
+}
+
+.bs4_gold > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button:before, .bs4_gold > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_gold > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > h2, .bs4_gold > .modal-dialog > .modal-content .bs4_team_txt > a:before, .bs4_gold > .modal-dialog > .modal-content a.bs4_bnr_btn:before {
+  background: #a98f00;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_brown > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button, .bs4_brown > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:before, .bs4_brown > .modal-dialog > .modal-content .bs4_form_header > a:before, .bs4_brown > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_brown > .modal-dialog > .modal-content .bs4_prtflo_icons > a:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_sc_content > a.bs4_sldr_sc_btn:before, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-next:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_sc_control .carousel-control-prev:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-next:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_vid_control .carousel-control-prev:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_subscribe_close > a:before, .bs4_brown > .modal-dialog > .modal-content .bs4_team_txt > a, .bs4_brown > .modal-dialog > .modal-content a.bs4_bnr_btn, .bs4_brown > .modal-dialog > .modal-content a.bs4_bnr_cl_btn:before, .bs4_brown > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:before, .bs4_brown > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:before, .bs4_brown > .modal-dialog > .modal-content a.bs4_sq_txt_close:before {
+  background: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_checkbox > label > a, .bs4_brown > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_brown > .modal-dialog > .modal-content .bs4_prtflo_detail > a:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-next:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_img_control .carousel-control-prev:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_thumb_txt > a:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_team_img > ul > li > a:hover, .bs4_brown > .modal-dialog > .modal-content form > .bs4_textarea > textarea {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > h2 {
+  border-top: 2px solid #c0a063;
+  border-bottom: 2px solid #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span, .bs4_brown > .modal-dialog > .modal-content .bs4_input_txt > input:focus, .bs4_brown > .modal-dialog > .modal-content .bs4_radio > div > input:checked + span, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_cmrce_indicators > .carousel-indicators .active, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_thumb_indicators > .carousel-indicators .active, .bs4_brown > .modal-dialog > .modal-content .bs4_textarea > textarea:focus, .bs4_brown > .modal-dialog > .modal-content a.bs4_sldr_cmrce_close:hover, .bs4_brown > .modal-dialog > .modal-content a.bs4_sngl_cmrce_close:hover {
+  border: 1px solid #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-webkit-input-placeholder {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_input_txt > input:focus::-moz-placeholder {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-ms-input-placeholder {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_input_txt > input:focus:-moz-placeholder {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-webkit-input-placeholder {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_textarea > textarea:focus::-moz-placeholder {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-ms-input-placeholder {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_textarea > textarea:focus:-moz-placeholder {
+  color: #c0a063;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_checkbox > label > a:hover, .bs4_brown > .modal-dialog > .modal-content .bs4_sldr_cmrce_txt > ul > li, .bs4_brown > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > ul > li {
+  color: #806a42;
+}
+
+.bs4_brown > .modal-dialog > .modal-content .bs4_form_cmrce_btn > button:before, .bs4_brown > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_brown > .modal-dialog > .modal-content .bs4_sngl_cmrce_txt > h2, .bs4_brown > .modal-dialog > .modal-content .bs4_team_txt > a:before, .bs4_brown > .modal-dialog > .modal-content a.bs4_bnr_btn:before {
+  background: #806a42;
+}
+
+.bs4_bg_transp > .modal-dialog > .modal-content {
+  background: 0 0;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content {
+  background: #000;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_form_footer:before, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_header:after {
+  background: #323232;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_checkbox > div > input + span:before, .bs4_bg_black > .modal-dialog > .modal-content .bs4_checkbox > label, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_header > h3, .bs4_bg_black > .modal-dialog > .modal-content .bs4_input_txt > label, .bs4_bg_black > .modal-dialog > .modal-content .bs4_radio > label, .bs4_bg_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_bg_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited, .bs4_bg_black > .modal-dialog > .modal-content .bs4_subscribe_txt > h1, .bs4_bg_black > .modal-dialog > .modal-content .bs4_subscribe_txt > p, .bs4_bg_black > .modal-dialog > .modal-content .bs4_textarea > label {
+  color: #e6e6e6;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_checkbox > div > span, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_bg_black > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_bg_black > .modal-dialog > .modal-content .bs4_radio > div > span, .bs4_bg_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_bg_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited, .bs4_bg_black > .modal-dialog > .modal-content .bs4_textarea > textarea {
+  background: 0 0;
+  border: 1px solid #323232;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span:before, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:active, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:hover, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_header > a:active, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_header > a:hover, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_submit > button:active, .bs4_bg_black > .modal-dialog > .modal-content .bs4_form_submit > button:hover, .bs4_bg_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:active, .bs4_bg_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:hover {
+  color: #fff;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_input_txt > input::-webkit-input-placeholder {
+  color: #e6e6e6;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_input_txt > input::-moz-placeholder {
+  color: #e6e6e6;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_input_txt > input:-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_input_txt > input:-moz-placeholder {
+  color: #e6e6e6;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_textarea > textarea::-webkit-input-placeholder {
+  color: #e6e6e6;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_textarea > textarea::-moz-placeholder {
+  color: #e6e6e6;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_textarea > textarea:-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.bs4_bg_black > .modal-dialog > .modal-content .bs4_textarea > textarea:-moz-placeholder {
+  color: #e6e6e6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content {
+  background: #424242;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_footer:before, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_header:after {
+  background: #7a7a7a;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_checkbox > div > input + span:before, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_checkbox > label, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_header > h3, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_input_txt > label, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_radio > label, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_subscribe_txt > h1, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_subscribe_txt > p, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_textarea > label {
+  color: #d6d6d6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_checkbox > div > span, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_radio > div > span, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_textarea > textarea {
+  background: #555;
+  border: 1px solid #7a7a7a;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span:before, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:active, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:hover, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_header > a:active, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_header > a:hover, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_submit > button:active, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_form_submit > button:hover, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:active, .bs4_bg_light_black > .modal-dialog > .modal-content .bs4_subscribe_close > a:hover {
+  color: #fff;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_input_txt > input::-webkit-input-placeholder {
+  color: #d6d6d6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_input_txt > input::-moz-placeholder {
+  color: #d6d6d6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_input_txt > input:-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_input_txt > input:-moz-placeholder {
+  color: #d6d6d6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_textarea > textarea::-webkit-input-placeholder {
+  color: #d6d6d6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_textarea > textarea::-moz-placeholder {
+  color: #d6d6d6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_textarea > textarea:-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+.bs4_bg_light_black > .modal-dialog > .modal-content .bs4_textarea > textarea:-moz-placeholder {
+  color: #d6d6d6;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content {
+  background: #fff;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_form_footer:before, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_header:after {
+  background: #eaeaea;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_checkbox > label, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_header > h3, .bs4_bg_white > .modal-dialog > .modal-content .bs4_input_txt > label, .bs4_bg_white > .modal-dialog > .modal-content .bs4_radio > label, .bs4_bg_white > .modal-dialog > .modal-content .bs4_subscribe_txt > h1, .bs4_bg_white > .modal-dialog > .modal-content .bs4_subscribe_txt > p, .bs4_bg_white > .modal-dialog > .modal-content .bs4_textarea > textarea {
+  color: #343434;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_checkbox > div > input + span:before, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_bg_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_bg_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited {
+  color: #a1a1a1;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_checkbox > div > span, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_bg_white > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_bg_white > .modal-dialog > .modal-content .bs4_radio > div > span, .bs4_bg_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_bg_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited, .bs4_bg_white > .modal-dialog > .modal-content .bs4_textarea > textarea {
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span:before, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:active, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:hover, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_header > a:active, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_header > a:hover, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_submit > button:active, .bs4_bg_white > .modal-dialog > .modal-content .bs4_form_submit > button:hover, .bs4_bg_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:active, .bs4_bg_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:hover {
+  color: #fff;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_input_txt > input::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_input_txt > input::-moz-placeholder {
+  color: #a1a1a1;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_input_txt > input:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_input_txt > input:-moz-placeholder {
+  color: #a1a1a1;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_textarea > textarea::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_textarea > textarea::-moz-placeholder {
+  color: #a1a1a1;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_textarea > textarea:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.bs4_bg_white > .modal-dialog > .modal-content .bs4_textarea > textarea:-moz-placeholder {
+  color: #a1a1a1;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content {
+  background: #f5f5f5;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_footer:before, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_header:after {
+  background: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_header > h3, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_input_txt > label, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_radio > label, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_subscribe_txt > h1, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_subscribe_txt > p, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_textarea > textarea {
+  color: #4d4d4d;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_checkbox > div > input + span:before, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_checkbox > label, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited {
+  color: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_checkbox > div > span, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_header > a:link, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_header > a:visited, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_radio > div > span, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:link, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:visited, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_textarea > textarea {
+  border: 1px solid #d9d9d9;
+  background: 0 0;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_checkbox > div > input:checked + span:before, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:active, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_footer > ul > li > a:hover, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_header > a:active, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_header > a:hover, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_submit > button:active, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_form_submit > button:hover, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:active, .bs4_bg_light_white > .modal-dialog > .modal-content .bs4_subscribe_close > a:hover {
+  color: #fff;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_input_txt > input::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_input_txt > input::-moz-placeholder {
+  color: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_input_txt > input:-ms-input-placeholder {
+  color: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_input_txt > input:-moz-placeholder {
+  color: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_textarea > textarea::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_textarea > textarea::-moz-placeholder {
+  color: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_textarea > textarea:-ms-input-placeholder {
+  color: #d9d9d9;
+}
+
+.bs4_bg_light_white > .modal-dialog > .modal-content .bs4_textarea > textarea:-moz-placeholder {
+  color: #d9d9d9;
+}
+
+.bs4_none_radius > .modal-dialog, .bs4_none_radius > .modal-dialog > .modal-content, .bs4_none_radius > .modal-dialog > .modal-content .bs4_checkbox > div > span, .bs4_none_radius > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_none_radius > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_none_radius > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_none_radius > .modal-dialog > .modal-content .bs4_radio > div > span, .bs4_none_radius > .modal-dialog > .modal-content .bs4_textarea > textarea, .bs4_none_radius > .modal-dialog > .modal-content a, .bs4_none_radius > .modal-dialog > .modal-content a:before {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.bs4_less_radius > .modal-dialog, .bs4_less_radius > .modal-dialog > .modal-content, .bs4_less_radius > .modal-dialog > .modal-content .bs4_checkbox > div > span, .bs4_less_radius > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_less_radius > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_less_radius > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_less_radius > .modal-dialog > .modal-content .bs4_radio > div > span, .bs4_less_radius > .modal-dialog > .modal-content .bs4_textarea > textarea, .bs4_less_radius > .modal-dialog > .modal-content a, .bs4_less_radius > .modal-dialog > .modal-content a:before {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.bs4_semi_radius > .modal-dialog, .bs4_semi_radius > .modal-dialog > .modal-content, .bs4_semi_radius > .modal-dialog > .modal-content .bs4_checkbox > div > span, .bs4_semi_radius > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_semi_radius > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_semi_radius > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_semi_radius > .modal-dialog > .modal-content .bs4_radio > div > span, .bs4_semi_radius > .modal-dialog > .modal-content .bs4_textarea > textarea, .bs4_semi_radius > .modal-dialog > .modal-content a, .bs4_semi_radius > .modal-dialog > .modal-content a:before {
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.notransition {
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  -o-transition: none!important;
+  transition: none!important;
+}
+
+.bs4_full_radius > .modal-dialog, .bs4_full_radius > .modal-dialog > .modal-content, .bs4_full_radius > .modal-dialog > .modal-content .bs4_checkbox > div > span, .bs4_full_radius > .modal-dialog > .modal-content .bs4_form_submit > button, .bs4_full_radius > .modal-dialog > .modal-content .bs4_form_submit > button:before, .bs4_full_radius > .modal-dialog > .modal-content .bs4_input_txt > input, .bs4_full_radius > .modal-dialog > .modal-content .bs4_radio > div > span, .bs4_full_radius > .modal-dialog > .modal-content .bs4_textarea > textarea, .bs4_full_radius > .modal-dialog > .modal-content a, .bs4_full_radius > .modal-dialog > .modal-content a:before {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.modal-backdrop {
+  background: 0 0;
+}
+
+.bs4_bd_black:before {
+  background: #000;
+}
+
+.bs4_bd_white:before {
+  background: #fff;
+}
+
+.bs4_bd_gray:before {
+  background: #f1f1f1;
+}
+
+.bs4_bd_trnsp:before {
+  opacity: 0;
+}
+
+.bs4_bd_less_trnsp:before {
+  opacity: .2;
+}
+
+.bs4_bd_semi_trnsp:before {
+  opacity: .5;
+}
+
+.bs4_bd_dark_trnsp:before {
+  opacity: .9;
+}
+
+.bs4_bd_thick:before {
+  opacity: 1;
+}
+
+.bs4_shadow_none > .modal-dialog > .modal-content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.bs4_center > .modal-dialog {
+  margin: auto;
+}
+
+.bs4_left > .modal-dialog {
+  margin: auto auto auto 0;
+}
+
+.bs4_right > .modal-dialog {
+  margin: auto 0 auto auto;
+}
+
+.bs4_top_center > .modal-dialog {
+  margin: 0 auto auto;
+}
+
+.bs4_bottom_center > .modal-dialog {
+  margin: auto auto 0;
+}
+
+.bs4_top_left > .modal-dialog {
+  margin: 0 auto auto 0;
+}
+
+.bs4_top_right > .modal-dialog {
+  margin: 0 0 auto auto;
+}
+
+.bs4_bottom_left > .modal-dialog {
+  margin: auto auto 0 0;
+}
+
+.bs4_bottom_right > .modal-dialog {
+  margin: auto 0 0 auto;
+}
+
+.modal.fade.bs4_animate .modal-dialog, .modal.show.bs4_animate .modal-dialog {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.modal.fade.bs4SlideInLeft .modal-dialog {
+  -webkit-transform: translate(-100%,0);
+  -ms-transform: translate(-100%,0);
+  -o-transform: translate(-100%,0);
+  transform: translate(-100%,0);
+}
+
+.modal.show.bs4SlideInLeft .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.modal.fade.bs4SlideInRight .modal-dialog {
+  -webkit-transform: translate(100%,0);
+  -ms-transform: translate(100%,0);
+  -o-transform: translate(100%,0);
+  transform: translate(100%,0);
+}
+
+.modal.show.bs4SlideInRight .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.modal.fade.bs4SlideInUp .modal-dialog {
+  -webkit-transform: translate(0,100%);
+  -ms-transform: translate(0,100%);
+  -o-transform: translate(0,100%);
+  transform: translate(0,100%);
+}
+
+.modal.show.bs4SlideInUp .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.modal.fade.bs4SlideInUpLeft .modal-dialog {
+  -webkit-transform: translate(100%,100%);
+  -ms-transform: translate(100%,100%);
+  -o-transform: translate(100%,100%);
+  transform: translate(100%,100%);
+}
+
+.modal.show.bs4SlideInUpLeft .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.modal.fade.bs4SlideInUpRight .modal-dialog {
+  -webkit-transform: translate(-100%,100%);
+  -ms-transform: translate(-100%,100%);
+  -o-transform: translate(-100%,100%);
+  transform: translate(-100%,100%);
+}
+
+.modal.show.bs4SlideInUpRight .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.modal.fade.bs4SlideInDown .modal-dialog {
+  -webkit-transform: translate(0,-100%);
+  -ms-transform: translate(0,-100%);
+  -o-transform: translate(0,-100%);
+  transform: translate(0,-100%);
+}
+
+.modal.show.bs4SlideInDown .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.modal.fade.bs4SlideInDownLeft .modal-dialog {
+  -webkit-transform: translate(100%,-100%);
+  -ms-transform: translate(100%,-100%);
+  -o-transform: translate(100%,-100%);
+  transform: translate(100%,-100%);
+}
+
+.modal.show.bs4SlideInDownLeft .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.modal.fade.bs4SlideInDownRight .modal-dialog {
+  -webkit-transform: translate(-100%,-100%);
+  -ms-transform: translate(-100%,-100%);
+  -o-transform: translate(-100%,-100%);
+  transform: translate(-100%,-100%);
+}
+
+.modal.show.bs4SlideInDownRight .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+@keyframes bs4BounceIn {
+  0% {
+    -webkit-transform: scale3d(.3,.3,.3);
+    transform: scale3d(.3,.3,.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1,1.1,1.1);
+    transform: scale3d(1.1,1.1,1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(.9,.9,.9);
+    transform: scale3d(.9,.9,.9);
+  }
+  60% {
+    -webkit-transform: scale3d(1.03,1.03,1.03);
+    transform: scale3d(1.03,1.03,1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(.97,.97,.97);
+    transform: scale3d(.97,.97,.97);
+  }
+  100% {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
+}
+
+@keyframes bs4BounceOut {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
+  }
+}
+
+.modal.fade.bs4BounceIn .modal-dialog {
+  -webkit-animation-name: bs4BounceOut;
+  animation-name: bs4BounceOut;
+}
+
+.modal.show.bs4BounceIn .modal-dialog {
+  -webkit-animation-name: bs4BounceIn;
+  animation-name: bs4BounceIn;
+}
+
+@keyframes bs4BounceInDown {
+  0% {
+    -webkit-transform: translate3d(0,-3000px,0);
+    transform: translate3d(0,-3000px,0);
+  }
+  60% {
+    -webkit-transform: translate3d(0,25px,0);
+    transform: translate3d(0,25px,0);
+  }
+  75% {
+    -webkit-transform: translate3d(0,-10px,0);
+    transform: translate3d(0,-10px,0);
+  }
+  90% {
+    -webkit-transform: translate3d(0,5px,0);
+    transform: translate3d(0,5px,0);
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4BounceOutDown {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+}
+
+.modal.fade.bs4BounceInDown .modal-dialog {
+  -webkit-animation-name: bs4BounceOutDown;
+  animation-name: bs4BounceOutDown;
+}
+
+.modal.show.bs4BounceInDown .modal-dialog {
+  -webkit-animation-name: bs4BounceInDown;
+  animation-name: bs4BounceInDown;
+}
+
+@keyframes bs4BounceInLeft {
+  0% {
+    -webkit-transform: translate3d(-3000px,0,0);
+    transform: translate3d(-3000px,0,0);
+  }
+  60% {
+    -webkit-transform: translate3d(25px,0,0);
+    transform: translate3d(25px,0,0);
+  }
+  75% {
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+  }
+  90% {
+    -webkit-transform: translate3d(5px,0,0);
+    transform: translate3d(5px,0,0);
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4BounceOutLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+}
+
+.modal.fade.bs4BounceInLeft .modal-dialog {
+  -webkit-animation-name: bs4BounceOutLeft;
+  animation-name: bs4BounceOutLeft;
+}
+
+.modal.show.bs4BounceInLeft .modal-dialog {
+  -webkit-animation-name: bs4BounceInLeft;
+  animation-name: bs4BounceInLeft;
+}
+
+@keyframes bs4BounceInRight {
+  0% {
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+  }
+  60% {
+    -webkit-transform: translate3d(-25%,0,0);
+    transform: translate3d(-25%,0,0);
+  }
+  75% {
+    -webkit-transform: translate3d(10%,0,0);
+    transform: translate3d(10%,0,0);
+  }
+  90% {
+    -webkit-transform: translate3d(-5%,0,0);
+    transform: translate3d(-5%,0,0);
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4BounceOutRight {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+  }
+}
+
+.modal.fade.bs4BounceInRight .modal-dialog {
+  -webkit-animation-name: bs4BounceOutRight;
+  animation-name: bs4BounceOutRight;
+}
+
+.modal.show.bs4BounceInRight .modal-dialog {
+  -webkit-animation-name: bs4BounceInRight;
+  animation-name: bs4BounceInRight;
+}
+
+@keyframes bs4BounceInUp {
+  0% {
+    -webkit-transform: translate3d(0,3000px,0);
+    transform: translate3d(0,3000px,0);
+  }
+  60% {
+    -webkit-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+  }
+  75% {
+    -webkit-transform: translate3d(0,10px,0);
+    transform: translate3d(0,10px,0);
+  }
+  90% {
+    -webkit-transform: translate3d(0,-5px,0);
+    transform: translate3d(0,-5px,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
+
+@keyframes bs4BounceOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+}
+
+.modal.fade.bs4BounceInUp .modal-dialog {
+  -webkit-animation-name: bs4BounceOutUp;
+  animation-name: bs4BounceOutUp;
+}
+
+.modal.show.bs4BounceInUp .modal-dialog {
+  -webkit-animation-name: bs4BounceInUp;
+  animation-name: bs4BounceInUp;
+}
+
+@keyframes bs4FadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4FadeOutDown {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+}
+
+.modal.fade.bs4FadeInDown .modal-dialog {
+  -webkit-animation-name: bs4FadeOutDown;
+  animation-name: bs4FadeOutDown;
+}
+
+.modal.show.bs4FadeInDown .modal-dialog {
+  -webkit-animation-name: bs4FadeInDown;
+  animation-name: bs4FadeInDown;
+}
+
+@keyframes bs4FadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4FadeOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+}
+
+.modal.fade.bs4FadeInUp .modal-dialog {
+  -webkit-animation-name: bs4FadeOutUp;
+  animation-name: bs4FadeOutUp;
+}
+
+.modal.show.bs4FadeInUp .modal-dialog {
+  -webkit-animation-name: bs4FadeInUp;
+  animation-name: bs4FadeInUp;
+}
+
+@keyframes bs4FadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4FadeOutLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+}
+
+.modal.fade.bs4FadeInLeft .modal-dialog {
+  -webkit-animation-name: bs4FadeOutLeft;
+  animation-name: bs4FadeOutLeft;
+}
+
+.modal.show.bs4FadeInLeft .modal-dialog {
+  -webkit-animation-name: bs4FadeInLeft;
+  animation-name: bs4FadeInLeft;
+}
+
+@keyframes bs4FadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4FadeOutRight {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+  }
+}
+
+.modal.fade.bs4FadeInRight .modal-dialog {
+  -webkit-animation-name: bs4FadeOutRight;
+  animation-name: bs4FadeOutRight;
+}
+
+.modal.show.bs4FadeInRight .modal-dialog {
+  -webkit-animation-name: bs4FadeInRight;
+  animation-name: bs4FadeInRight;
+}
+
+@keyframes bs4FlipX {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotate3d(1,0,0,90deg);
+    transform: perspective(400px) rotate3d(1,0,0,90deg);
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1,0,0,-20deg);
+    transform: perspective(400px) rotate3d(1,0,0,-20deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotate3d(1,0,0,10deg);
+    transform: perspective(400px) rotate3d(1,0,0,10deg);
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1,0,0,-5deg);
+    transform: perspective(400px) rotate3d(1,0,0,-5deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes bs4FlipXOut {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(0) rotate3d(1,0,0,180deg);
+    transform: perspective(0) rotate3d(1,0,0,180deg);
+  }
+}
+
+.modal.fade.bs4FlipX .modal-dialog {
+  -webkit-animation-name: bs4FlipXOut;
+  animation-name: bs4FlipXOut;
+}
+
+.modal.show.bs4FlipX .modal-dialog {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: bs4FlipX;
+  animation-name: bs4FlipX;
+}
+
+@keyframes bs4FlipY {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotate3d(0,1,0,90deg);
+    transform: perspective(400px) rotate3d(0,1,0,90deg);
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0,1,0,-20deg);
+    transform: perspective(400px) rotate3d(0,1,0,-20deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotate3d(0,1,0,10deg);
+    transform: perspective(400px) rotate3d(0,1,0,10deg);
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0,1,0,-5deg);
+    transform: perspective(400px) rotate3d(0,1,0,-5deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes bs4FlipYOut {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(0) rotate3d(0,1,0,180deg);
+    transform: perspective(0) rotate3d(0,1,0,180deg);
+  }
+}
+
+.modal.fade.bs4FlipY .modal-dialog {
+  -webkit-animation-name: bs4FlipYOut;
+  animation-name: bs4FlipYOut;
+}
+
+.modal.show.bs4FlipY .modal-dialog {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: bs4FlipY;
+  animation-name: bs4FlipY;
+}
+
+@keyframes bs4SpeedIn {
+  0% {
+    -webkit-transform: translate3d(100%,0,0) skewX(-30deg);
+    transform: translate3d(100%,0,0) skewX(-30deg);
+  }
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+  }
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4SpeedOut {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0,0,0) skewX(-60deg);
+    transform: translate3d(0,0,0) skewX(-60deg);
+  }
+}
+
+.modal.fade.bs4SpeedIn .modal-dialog {
+  -webkit-animation-name: bs4SpeedOut;
+  animation-name: bs4SpeedOut;
+}
+
+.modal.show.bs4SpeedIn .modal-dialog {
+  -webkit-animation-name: bs4SpeedIn;
+  animation-name: bs4SpeedIn;
+}
+
+@keyframes bs4RotateIn {
+  from {
+    opacity: 0;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0,0,1,-200deg);
+    transform: rotate3d(0,0,1,-200deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4RotateOut {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: rotate3d(0,0,1,-200deg);
+    transform: rotate3d(0,0,1,-200deg);
+  }
+}
+
+.modal.fade.bs4RotateIn .modal-dialog {
+  -webkit-animation-name: bs4RotateOut;
+  animation-name: bs4RotateOut;
+}
+
+.modal.show.bs4RotateIn .modal-dialog {
+  -webkit-animation-name: bs4RotateIn;
+  animation-name: bs4RotateIn;
+}
+
+@keyframes bs4RotateInDownLeft {
+  from {
+    opacity: 0;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0,0,1,-45deg);
+    transform: rotate3d(0,0,1,-45deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4RotateOutDownLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0,0,1,-45deg);
+    transform: rotate3d(0,0,1,-45deg);
+  }
+}
+
+.modal.fade.bs4RotateInDownLeft .modal-dialog {
+  -webkit-animation-name: bs4RotateOutDownLeft;
+  animation-name: bs4RotateOutDownLeft;
+}
+
+.modal.show.bs4RotateInDownLeft .modal-dialog {
+  -webkit-animation-name: bs4RotateInDownLeft;
+  animation-name: bs4RotateInDownLeft;
+}
+
+@keyframes bs4RotateInDownRight {
+  from {
+    opacity: 0;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0,0,1,45deg);
+    transform: rotate3d(0,0,1,45deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4RotateOutDownRight {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0,0,1,45deg);
+    transform: rotate3d(0,0,1,45deg);
+  }
+}
+
+.modal.fade.bs4RotateInDownRight .modal-dialog {
+  -webkit-animation-name: bs4RotateOutDownRight;
+  animation-name: bs4RotateOutDownRight;
+}
+
+.modal.show.bs4RotateInDownRight .modal-dialog {
+  -webkit-animation-name: bs4RotateInDownRight;
+  animation-name: bs4RotateInDownRight;
+}
+
+@keyframes bs4RotateInUpLeft {
+  from {
+    opacity: 0;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0,0,1,90deg);
+    transform: rotate3d(0,0,1,90deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4RotateOutUpLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0,0,1,90deg);
+    transform: rotate3d(0,0,1,90deg);
+  }
+}
+
+.modal.fade.bs4RotateInUpLeft .modal-dialog {
+  -webkit-animation-name: bs4RotateOutUpLeft;
+  animation-name: bs4RotateOutUpLeft;
+}
+
+.modal.show.bs4RotateInUpLeft .modal-dialog {
+  -webkit-animation-name: bs4RotateInUpLeft;
+  animation-name: bs4RotateInUpLeft;
+}
+
+@keyframes bs4RotateInUpRight {
+  from {
+    opacity: 0;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0,0,1,-90deg);
+    transform: rotate3d(0,0,1,-90deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4RotateOutUpRight {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0,0,1,-90deg);
+    transform: rotate3d(0,0,1,-90deg);
+  }
+}
+
+.modal.fade.bs4RotateInUpRight .modal-dialog {
+  -webkit-animation-name: bs4RotateOutUpRight;
+  animation-name: bs4RotateOutUpRight;
+}
+
+.modal.show.bs4RotateInUpRight .modal-dialog {
+  -webkit-animation-name: bs4RotateInUpRight;
+  animation-name: bs4RotateInUpRight;
+}
+
+@keyframes bs4RollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);
+    transform: translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bs4RollOut {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);
+    transform: translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);
+  }
+}
+
+.modal.fade.bs4RollIn .modal-dialog {
+  -webkit-animation-name: bs4RollOut;
+  animation-name: bs4RollOut;
+}
+
+.modal.show.bs4RollIn .modal-dialog {
+  -webkit-animation-name: bs4RollIn;
+  animation-name: bs4RollIn;
+}
+
+@keyframes bs4ZoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3,.3,.3);
+    transform: scale3d(.3,.3,.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bs4ZoomInOut {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(.3,.3,.3);
+    transform: scale3d(.3,.3,.3);
+  }
+}
+
+.modal.fade.bs4ZoomIn .modal-dialog {
+  -webkit-animation-name: bs4ZoomInOut;
+  animation-name: bs4ZoomInOut;
+}
+
+.modal.show.bs4ZoomIn .modal-dialog {
+  -webkit-animation-name: bs4ZoomIn;
+  animation-name: bs4ZoomIn;
+}
+
+@keyframes bs4ZoomOut {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+
+@keyframes bs4ZoomOutIn {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);
+  }
+}
+
+.modal.fade.bs4ZoomOut .modal-dialog {
+  -webkit-animation-name: bs4ZoomOutIn;
+  animation-name: bs4ZoomOutIn;
+}
+
+.modal.show.bs4ZoomOut .modal-dialog {
+  -webkit-animation-name: bs4ZoomOut;
+  animation-name: bs4ZoomOut;
+}
+
+@keyframes bs4ZoomInRotate {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0,0) rotate(360deg);
+    transform: scale(0,0) rotate(360deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1,1) rotate(0);
+    transform: scale(1,1) rotate(0);
+  }
+}
+
+@keyframes bs4ZoomInOutRotate {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0,0) rotate(360deg);
+    transform: scale(0,0) rotate(360deg);
+  }
+}
+
+.modal.fade.bs4ZoomInRotate .modal-dialog {
+  -webkit-animation-name: bs4ZoomInOutRotate;
+  animation-name: bs4ZoomInOutRotate;
+}
+
+.modal.show.bs4ZoomInRotate .modal-dialog {
+  -webkit-animation-name: bs4ZoomInRotate;
+  animation-name: bs4ZoomInRotate;
+}
+
+@keyframes bs4ZoomOutRotate {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(3,3) rotate(360deg);
+    transform: scale(3,3) rotate(360deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1,1) rotate(0);
+    transform: scale(1,1) rotate(0);
+  }
+}
+
+@keyframes bs4ZoomOutInRotate {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(3,3) rotate(360deg);
+    transform: scale(3,3) rotate(360deg);
+  }
+}
+
+.modal.fade.bs4ZoomOutRotate .modal-dialog {
+  -webkit-animation-name: bs4ZoomOutInRotate;
+  animation-name: bs4ZoomOutInRotate;
+}
+
+.modal.show.bs4ZoomOutRotate .modal-dialog {
+  -webkit-animation-name: bs4ZoomOutRotate;
+  animation-name: bs4ZoomOutRotate;
+}
+
+@keyframes bs4ZoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+    transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+    -webkit-animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+    transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+    -webkit-animation-timing-function: cubic-bezier(.175,.885,.32,1);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
+  }
+}
+
+@keyframes bs4ZoomOutDown {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
+  }
+}
+
+.modal.fade.bs4ZoomInDown .modal-dialog {
+  -webkit-animation-name: bs4ZoomOutDown;
+  animation-name: bs4ZoomOutDown;
+}
+
+.modal.show.bs4ZoomInDown .modal-dialog {
+  -webkit-animation-name: bs4ZoomInDown;
+  animation-name: bs4ZoomInDown;
+}
+
+@keyframes bs4ZoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1,.1,.1) translate3d(0,1000px,0);
+    transform: scale3d(.1,.1,.1) translate3d(0,1000px,0);
+    -webkit-animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475,.475,.475) translate3d(0,-60px,0);
+    transform: scale3d(.475,.475,.475) translate3d(0,-60px,0);
+    -webkit-animation-timing-function: cubic-bezier(.175,.885,.32,1);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
+  }
+}
+
+@keyframes bs4ZoomOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
+  }
+}
+
+.modal.fade.bs4ZoomInUp .modal-dialog {
+  -webkit-animation-name: bs4ZoomOutUp;
+  animation-name: bs4ZoomOutUp;
+}
+
+.modal.show.bs4ZoomInUp .modal-dialog {
+  -webkit-animation-name: bs4ZoomInUp;
+  animation-name: bs4ZoomInUp;
+}
+
+@keyframes bs4ZoomInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1,.1,.1) translate3d(-1000px,0,0);
+    transform: scale3d(.1,.1,.1) translate3d(-1000px,0,0);
+    -webkit-animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475,.475,.475) translate3d(10px,0,0);
+    transform: scale3d(.475,.475,.475) translate3d(10px,0,0);
+    -webkit-animation-timing-function: cubic-bezier(.175,.885,.32,1);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
+  }
+}
+
+@keyframes bs4ZoomOutLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(.1,.1,.1) translate3d(-1000px,0,0);
+    transform: scale3d(.1,.1,.1) translate3d(-1000px,0,0);
+  }
+}
+
+.modal.fade.bs4ZoomInLeft .modal-dialog {
+  -webkit-animation-name: bs4ZoomOutLeft;
+  animation-name: bs4ZoomOutLeft;
+}
+
+.modal.show.bs4ZoomInLeft .modal-dialog {
+  -webkit-animation-name: bs4ZoomInLeft;
+  animation-name: bs4ZoomInLeft;
+}
+
+@keyframes bs4ZoomInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1,.1,.1) translate3d(1000px,0,0);
+    transform: scale3d(.1,.1,.1) translate3d(1000px,0,0);
+    -webkit-animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475,.475,.475) translate3d(-10px,0,0);
+    transform: scale3d(.475,.475,.475) translate3d(-10px,0,0);
+    -webkit-animation-timing-function: cubic-bezier(.175,.885,.32,1);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
+  }
+}
+
+@keyframes bs4ZoomOutRight {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(.1,.1,.1) translate3d(1000px,0,0);
+    transform: scale3d(.1,.1,.1) translate3d(1000px,0,0);
+  }
+}
+
+.modal.fade.bs4ZoomInRight .modal-dialog {
+  -webkit-animation-name: bs4ZoomOutRight;
+  animation-name: bs4ZoomOutRight;
+}
+
+.modal.show.bs4ZoomInRight .modal-dialog {
+  -webkit-animation-name: bs4ZoomInRight;
+  animation-name: bs4ZoomInRight;
+}
+
+.modal.fade.bs4_ease .modal-dialog {
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.modal.fade.bs4_easeInOut .modal-dialog {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.modal.fade.bs4_speedy .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(0,1,0,1);
+  animation-timing-function: cubic-bezier(0,1,0,1);
+}
+
+.modal.fade.bs4_slowSpeedy .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.3,1,0,1);
+  animation-timing-function: cubic-bezier(.3,1,0,1);
+}
+
+.modal.fade.bs4_easeOutInCubic .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.22,.81,.01,.99);
+  animation-timing-function: cubic-bezier(.22,.81,.01,.99);
+}
+
+.modal.fade.bs4_swing .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.02,.01,.47,1);
+  animation-timing-function: cubic-bezier(.02,.01,.47,1);
+}
+
+.modal.fade.bs4_easeOutCubic .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+  animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+
+.modal.fade.bs4_easeOutCirc .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.075,.82,.165,1);
+  animation-timing-function: cubic-bezier(.075,.82,.165,1);
+}
+
+.modal.fade.bs4_easeOutExpo .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.19,1,.22,1);
+  animation-timing-function: cubic-bezier(.19,1,.22,1);
+}
+
+.modal.fade.bs4_easeOutQuad .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.25,.46,.45,.94);
+  animation-timing-function: cubic-bezier(.25,.46,.45,.94);
+}
+
+.modal.fade.bs4_easeOutQuart .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.165,.84,.44,1);
+  animation-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+
+.modal.fade.bs4_easeOutQuint .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.23,1,.32,1);
+  animation-timing-function: cubic-bezier(.23,1,.32,1);
+}
+
+.modal.fade.bs4_easeOutSine .modal-dialog {
+  -webkit-animation-timing-function: cubic-bezier(.39,.575,.565,1);
+  animation-timing-function: cubic-bezier(.39,.575,.565,1);
+}
+
+.modal.fade.bs4_duration_sm .modal-dialog {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.modal.fade.bs4_duration_md .modal-dialog {
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-transition-duration: .7s;
+  transition-duration: .7s;
+}
+
+.modal.fade.bs4_duration_lg .modal-dialog {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.modal.fade.bs4_duration_vl .modal-dialog {
+  -webkit-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+  -webkit-transition-duration: 1.7s;
+  transition-duration: 1.7s;
+}
+
+.bs4_btn_x_in_shtr, .bs4_btn_x_in_shtr:active, .bs4_btn_x_out_shtr, .bs4_btn_x_out_shtr:active, .bs4_btn_y_in_shtr, .bs4_btn_y_in_shtr:active, .bs4_btn_y_out_shtr, .bs4_btn_y_out_shtr:active {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_btn_x_in_shtr:before, .bs4_btn_x_out_shtr:before, .bs4_btn_y_in_shtr:before, .bs4_btn_y_out_shtr:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  -webkit-transition: all .5s cubic-bezier(.22,.81,.01,.99);
+  transition: all .5s cubic-bezier(.22,.81,.01,.99);
+}
+
+.bs4_btn_x_in_shtr:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.bs4_btn_x_in_shtr:active:before, .bs4_btn_x_in_shtr:hover:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.bs4_btn_y_in_shtr:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.bs4_btn_y_in_shtr:active:before, .bs4_btn_y_in_shtr:hover:before {
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.bs4_btn_x_out_shtr:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.bs4_btn_x_out_shtr:active:before, .bs4_btn_x_out_shtr:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.bs4_btn_y_out_shtr:before {
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.bs4_btn_y_out_shtr:active:before, .bs4_btn_y_out_shtr:hover:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.bs4s_ease .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_ease .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    transition-timing-function: ease;
+  }
+}
+
+.bs4s_slowSpeedy .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.3,1,0,1);
+  -moz-transition-timing-function: cubic-bezier(.3,1,0,1);
+  transition-timing-function: cubic-bezier(.3,1,0,1);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_slowSpeedy .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.3,1,0,1);
+    -moz-transition-timing-function: cubic-bezier(.3,1,0,1);
+    transition-timing-function: cubic-bezier(.3,1,0,1);
+  }
+}
+
+.bs4s_easeOutInCubic .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.22,.81,.01,.99);
+  -moz-transition-timing-function: cubic-bezier(.22,.81,.01,.99);
+  transition-timing-function: cubic-bezier(.22,.81,.01,.99);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_easeOutInCubic .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.22,.81,.01,.99);
+    -moz-transition-timing-function: cubic-bezier(.22,.81,.01,.99);
+    transition-timing-function: cubic-bezier(.22,.81,.01,.99);
+  }
+}
+
+.bs4s_swing .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.02,.01,.47,1);
+  -moz-transition-timing-function: cubic-bezier(.02,.01,.47,1);
+  transition-timing-function: cubic-bezier(.02,.01,.47,1);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_swing .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.02,.01,.47,1);
+    -moz-transition-timing-function: cubic-bezier(.02,.01,.47,1);
+    transition-timing-function: cubic-bezier(.02,.01,.47,1);
+  }
+}
+
+.bs4s_easeOutCubic .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  -moz-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_easeOutCubic .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    -moz-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  }
+}
+
+.bs4s_easeOutCirc .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  -moz-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  transition-timing-function: cubic-bezier(.075,.82,.165,1);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_easeOutCirc .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+    -moz-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+    transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  }
+}
+
+.bs4s_easeOutExpo .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.19,1,.22,1);
+  -moz-transition-timing-function: cubic-bezier(.19,1,.22,1);
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_easeOutExpo .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.19,1,.22,1);
+    -moz-transition-timing-function: cubic-bezier(.19,1,.22,1);
+    transition-timing-function: cubic-bezier(.19,1,.22,1);
+  }
+}
+
+.bs4s_easeOutQuad .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  -moz-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_easeOutQuad .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+    -moz-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  }
+}
+
+.bs4s_easeOutQuart .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  -moz-transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  transition-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_easeOutQuart .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.165,.84,.44,1);
+    -moz-transition-timing-function: cubic-bezier(.165,.84,.44,1);
+    transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  }
+}
+
+.bs4s_easeOutQuint .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.23,1,.32,1);
+  -moz-transition-timing-function: cubic-bezier(.23,1,.32,1);
+  transition-timing-function: cubic-bezier(.23,1,.32,1);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_easeOutQuint .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.23,1,.32,1);
+    -moz-transition-timing-function: cubic-bezier(.23,1,.32,1);
+    transition-timing-function: cubic-bezier(.23,1,.32,1);
+  }
+}
+
+.bs4s_easeOutSine .carousel-inner > .carousel-item {
+  -webkit-transition-timing-function: cubic-bezier(.39,.575,.565,1);
+  -moz-transition-timing-function: cubic-bezier(.39,.575,.565,1);
+  transition-timing-function: cubic-bezier(.39,.575,.565,1);
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+  .bs4s_easeOutSine .carousel-inner > .carousel-item {
+    -webkit-transition-timing-function: cubic-bezier(.39,.575,.565,1);
+    -moz-transition-timing-function: cubic-bezier(.39,.575,.565,1);
+    transition-timing-function: cubic-bezier(.39,.575,.565,1);
+  }
+}
+
