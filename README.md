@@ -2,8 +2,6 @@
 
 Aplicação corporativa para gestão e monitoramento de denúncias desenvolvido para o hackfest-mprn2019.
 
-<!--
-
 ## Aplicações
 
 Tecnologias usadas Spring Boot, React Native
@@ -11,6 +9,7 @@ Tecnologias usadas Spring Boot, React Native
 - [Api](#)
 - [Web](#)
 - [Mobile](https://github.com/jonathanccardoso/e-denuncia/tree/master/npe)
+	- [Preview](https://snack.expo.io/@jonathan-moura/iae-react?session_id=snack-session-aebgrBdgY)
 
 ```javascript
 $ react-native start
@@ -18,9 +17,8 @@ $ react-native start
 
 ## Documentos
 
-- xd, videos, ...
-
--->
+- link-xd
+- script-banco
 
 ## Como contribuir?
 
