@@ -7,6 +7,7 @@ import TiposCrimes from "./pages/tiposCrimes";
 import FormDescricao from "./pages/formDescricao";
 import Anexo from "./pages/anexo";
 import Resumo from "./pages/resumo";
+import FeedBack from "./pages/feedback";
 
 const MainNavigator = createStackNavigator({
   Main: {screen: Main},
@@ -15,7 +16,8 @@ const MainNavigator = createStackNavigator({
   TiposCrimes: {screen: TiposCrimes},
   FormDescricao: {screen: FormDescricao},
   Anexo: {screen: Anexo},
-  Resumo: {screen: Resumo}
+  Resumo: {screen: Resumo},
+  FeedBack: {screen: FeedBack}
 });
 
 const App = createAppContainer(MainNavigator);
